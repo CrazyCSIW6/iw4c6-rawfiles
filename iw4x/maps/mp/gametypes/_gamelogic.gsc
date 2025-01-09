@@ -23,6 +23,7 @@ init()
 {
 	level.intermissionTime = getDvarInt( "scr_intermissionTime" );
 	level.c6nb = getDvar( "nobonus" );
+	level.c6ss = getDvarInt( "splitscreen" );
 }
 
 // when a team leaves completely, that team forfeited, team left wins round, ends game
@@ -678,19 +679,19 @@ updateMatchBonusScores( winner )
 			spm = player maps\mp\gametypes\_rank::getSPM();				
 			if ( winningTeam == "tie" )
 			{
-				playerScore = int( (winnerScale * ((gameLength/60) * spm)) * (player.timePlayed["total"] / gameLength) * 5 + 300 );
+				playerScore = int( (winnerScale * ((gameLength/60) * spm)) * (player.timePlayed["total"] / gameLength) * getDvarFloat( "iw4c6_xpscale" ) + 300 / 2);
 				player thread giveMatchBonus( "tie", playerScore );
 				player.matchBonus = playerScore;
 			}
 			else if ( isDefined( player.pers["team"] ) && player.pers["team"] == winningTeam )
 			{
-				playerScore = int( (winnerScale * ((gameLength/60) * spm)) * (player.timePlayed["total"] / gameLength) * 5 + 300 );
+				playerScore = int( (winnerScale * ((gameLength/60) * spm)) * (player.timePlayed["total"] / gameLength) * getDvarFloat( "iw4c6_xpscale" ) + 300 / 2);
 				player thread giveMatchBonus( "win", playerScore );
 				player.matchBonus = playerScore;
 			}
 			else if ( isDefined(player.pers["team"] ) && player.pers["team"] == losingTeam )
 			{
-				playerScore = int( (loserScale * ((gameLength/60) * spm)) * (player.timePlayed["total"] / gameLength) * 5 + 300 );
+				playerScore = int( (loserScale * ((gameLength/60) * spm)) * (player.timePlayed["total"] / gameLength) * getDvarFloat( "iw4c6_xpscale" ) + 300 / 2 );
 				player thread giveMatchBonus( "loss", playerScore );
 				player.matchBonus = playerScore;
 			}

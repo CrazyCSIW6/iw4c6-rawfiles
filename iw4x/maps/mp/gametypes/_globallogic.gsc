@@ -4,7 +4,7 @@
 
 init()
 {
-	level.splitscreen = isSplitScreen();
+	level.splitscreen = getDvarInt( "splitscreen" );
 	level.ps3 = (getDvar( "ps3Game" ) == "true");
 	level.xenon = (getDvar( "xenonGame" ) == "true");
 	level.console = (level.ps3 || level.xenon);

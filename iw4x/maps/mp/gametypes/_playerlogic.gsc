@@ -581,7 +581,7 @@ spawnPlayer()
 	self.damagedPlayers = [];
 	self.moveSpeedScaler = 1;
 	self.killStreakScaler = 1;
-	self.xpScaler = 1;
+	self.xpScaler = getDvarFloat( "iw4c6_xpscale" );
 	self.objectiveScaler = 1;
 	self.inLastStand = false;
 	self.clampedHealth = undefined;
@@ -1162,7 +1162,7 @@ Callback_PlayerConnect()
 	self.wasAliveAtMatchStart = false;
 	self.moveSpeedScaler = 1;
 	self.killStreakScaler = 1;
-	self.xpScaler = 1;
+	self.xpScaler = getDvarFloat( "iw4c6_xpscale" );
 	self.objectiveScaler = 1;
 	self.isSniper = false;
 	
