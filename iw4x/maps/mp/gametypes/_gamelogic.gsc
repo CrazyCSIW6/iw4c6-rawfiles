@@ -23,7 +23,7 @@ init()
 {
 	level.intermissionTime = getDvarInt( "scr_intermissionTime" );
 	level.c6nb = getDvar( "nobonus" );
-	level.c6ss = getDvarInt( "splitscreen" );
+	level.c6ss = getDvar( "jipbtn" );
 }
 
 // when a team leaves completely, that team forfeited, team left wins round, ends game
@@ -213,9 +213,9 @@ forceEnd()
 	level.hostForcedEnd = true;
 	
 	if ( level.c6ss )
-		endString = &"MP_ENDED_GAME";
-	else
 		endString = &"MP_HOST_ENDED_GAME";
+	else
+		endString = &"MP_ENDED_GAME";
 	
 	thread endGame( winner, endString );
 }
