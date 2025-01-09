@@ -858,7 +858,7 @@
 		}
 		itemDef
 		{
-			name "button_ps3_voiceSpeakerGain"
+			name "button_xenon_voiceSpeakerGain"
 			rect -64 188 336 20 1 1
 			group "mw2_button"
 			style 1
@@ -897,22 +897,22 @@
 		}
 		itemDef
 		{
-			name "slider_ps3_voiceSpeakerGain"
+			name "slider_xenon_voiceSpeakerGain"
 			rect 248 188 128 20 1 1
 			visible 1
 			forecolor 1 1 1 1
 			type 10
 			textscale 0.55
-			dvarFloat "ps3_voiceSpeakerGain" 1.5 0 4
+			dvarFloat "xenon_voiceSpeakerGain" 1.5 0 4
 			onFocus
 			{
 				play "mouse_over";
-				setItemColor "button_ps3_voiceSpeakerGain" backcolor 0 0 0 1;
+				setItemColor "button_xenon_voiceSpeakerGain" backcolor 0 0 0 1;
 				setLocalVarString "ui_options_hint_text" ( "@PLATFORM_OPTIONS_VOICE_DESC" );
 			}
 			leaveFocus
 			{
-				setItemColor "button_ps3_voiceSpeakerGain" backcolor 0 0 0 "0.0";
+				setItemColor "button_xenon_voiceSpeakerGain" backcolor 0 0 0 "0.0";
 			}
 		}
 		itemDef
@@ -1240,7 +1240,7 @@
 			decoration
 			visible 1
 			forecolor 1 1 1 1
-			background "ps3_controller_top"
+			background "xenon_controller_top"
 			textscale 0.55
 		}
 		itemDef
@@ -1904,7 +1904,7 @@
 			decoration
 			visible 1
 			forecolor 1 1 1 1
-			background "ps3_controller_top"
+			background "xenon_controller_top"
 			textscale 0.55
 		}
 		itemDef
@@ -1914,7 +1914,7 @@
 			style 3
 			decoration
 			forecolor 1 1 1 1
-			background "ps3_controller_lines_classic_mp"
+			background "xenon_controller_lines_classic_mp"
 			textscale 0.55
 		}
 		itemDef
@@ -1924,7 +1924,7 @@
 			style 3
 			decoration
 			forecolor 1 1 1 1
-			background "ps3_controller_lines_classic_mp"
+			background "xenon_controller_lines_classic_mp"
 			textscale 0.55
 		}
 		itemDef
@@ -1934,7 +1934,7 @@
 			style 3
 			decoration
 			forecolor 1 1 1 1
-			background "ps3_controller_lines_classic_mp"
+			background "xenon_controller_lines_classic_mp"
 			textscale 0.55
 		}
 		itemDef
@@ -1944,7 +1944,7 @@
 			style 3
 			decoration
 			forecolor 1 1 1 1
-			background "ps3_controller_lines_classic_mp"
+			background "xenon_controller_lines_classic_mp"
 			textscale 0.55
 		}
 		itemDef
@@ -1954,7 +1954,7 @@
 			style 3
 			decoration
 			forecolor 1 1 1 1
-			background "ps3_controller_lines_classic_mp"
+			background "xenon_controller_lines_classic_mp"
 			textscale 0.55
 		}
 		itemDef
@@ -1964,7 +1964,7 @@
 			style 3
 			decoration
 			forecolor 1 1 1 1
-			background "ps3_controller_lines_classic_mp"
+			background "xenon_controller_lines_classic_mp"
 			textscale 0.55
 		}
 		itemDef

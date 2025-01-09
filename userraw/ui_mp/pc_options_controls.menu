@@ -96,7 +96,7 @@
 			decoration
 			visible 1
 			forecolor 1 1 1 1
-			background "ps3_controller_top"
+			background "xenon_controller_top"
 			textscale 0.55
 		}
 		itemDef

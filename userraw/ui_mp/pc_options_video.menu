@@ -365,7 +365,7 @@
 			{
 				play "mouse_click";
 				close "pc_options_video";
-				open "sensitivity";
+				open "createserver";
 			}
 			onFocus
 			{
@@ -399,7 +399,7 @@
 			textalign 4
 			textscale 0.375
 			text "@MENU_LOW"
-			visible when ( getprofiledata( "viewSensitivity" ) == 0.6 )
+			visible when ( dvarstring( "input_viewSensitivity" ) == 0.6 )
 		}
 		itemDef
 		{
@@ -414,7 +414,7 @@
 			textalign 4
 			textscale 0.375
 			text "@MENU_MEDIUM"
-			visible when ( getprofiledata( "viewSensitivity" ) == 1 )
+			visible when ( dvarstring( "input_viewSensitivity" ) == 1 )
 		}
 		itemDef
 		{
@@ -429,7 +429,7 @@
 			textalign 4
 			textscale 0.375
 			text "@MENU_HIGH"
-			visible when ( getprofiledata( "viewSensitivity" ) == 1.8 )
+			visible when ( dvarstring( "input_viewSensitivity" ) == 1.8 )
 		}
 		itemDef
 		{
@@ -444,7 +444,7 @@
 			textalign 4
 			textscale 0.375
 			text "@MENU_CUSTOM"
-			visible when ( getprofiledata( "viewSensitivity" ) != 0.6 && getprofiledata( "viewSensitivity" ) != 1 && getprofiledata( "viewSensitivity" ) != 1.8 )
+			visible when ( dvarstring( "input_viewSensitivity" ) != 0.6 && dvarstring( "input_viewSensitivity" ) != 1 && dvarstring( "input_viewSensitivity" ) != 1.8 )
 		}
 		itemDef
 		{
