@@ -424,8 +424,7 @@
 			text "@MENU_MAIN_MENU_CAPS"
 			action
 			{
-				play "mouse_click";
-				open "single_popmenu";
+				execnow "quit";
 			}
 			onFocus
 			{
