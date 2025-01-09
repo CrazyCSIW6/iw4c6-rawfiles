@@ -1104,7 +1104,7 @@ bot_chat_streak( streakCount )
 	{
 		if ( self.pers[ "lastEarnedStreak" ] == "nuke" )
 		{
-			switch ( randomint( 5 ) )
+			switch ( randomint( 13 ) )
 			{
 				case 0:
 					self BotDoChat( 100, "I GOT A NUKE!!" );
@@ -1125,17 +1125,108 @@ bot_chat_streak( streakCount )
 				case 4:
 					self BotDoChat( 100, "You guys are getting nuuuuuuked~ x3" );
 					break;
+					
+				case 5:
+					self BotDoChat( 100, "25 and 0 baby!!! NUKE TIME!!!!!!" );
+					break;
+
+				case 6:
+					self BotDoChat( 100, "I'm unstoppable—say hello to my nuke!" );
+					break;
+
+				case 7:
+					self BotDoChat( 100, "Wrecked all of you! Here comes the NUKE!" );
+					break;
+
+				case 8:
+					self BotDoChat( 100, "I OWN this lobby. Watch the skies!" );
+					break;
+
+				case 9:
+					self BotDoChat( 100, "Guess whos got a nuke? Spoiler alert, its ^1ME." );
+					break;
+				
+				case 10:
+					self BotDoChat( 100, "prepare 2 get rekt" );
+					break;
+
+				case 11:
+					self BotDoChat( 100, "^1PREPARE UR ANUS" );
+					break;
+					
+				case 12:
+					self BotDoChat( 100, "WHAHAHAHAHA!! SAY GOODBYE, ^1DIE FUCKERS!!!!!!" );
+					break;
 			}
 		}
 		else
 		{
 			if ( getdvarint( "bots_loadout_allow_op" ) )
 			{
-				self BotDoChat( 100, "Come on! I would of had a nuke but I don't got it set..." );
+				switch( randomint( 11 ) )
+				{
+					case 0:
+					self BotDoChat( 100, "awww... i would have a nuke right now if i had set my killstreaks for it!" );
+						break;
+					case 1:
+					self BotDoChat( 100, "Wow look at my streak!! i should have picked a nuke before the match began" );
+						break;
+					case 2:
+					self BotDoChat( 100, "im on a crazy kill streak right now!" );
+						break;
+					case 3:
+					self BotDoChat( 100, "Holy crap im really kicking ass" );
+						break;
+					case 4:
+					self BotDoChat( 100, "25 streak and no nuke set... This hurts more than it should." );
+						break;
+					case 5:
+					self BotDoChat( 100, "All these kills, and for what? No nuke, no glory." );
+						break;
+					case 6:
+					self BotDoChat( 100, "I could be raining fire right now... if only I picked a nuke." );
+						break;
+					case 7:
+					self BotDoChat( 100, "I hate myself for forgetting to set the nuke." );
+						break;
+					case 8:
+					self BotDoChat( 100, "How do you forget to set the nuke? HOW?" );
+						break;
+					case 9:
+					self BotDoChat( 100, "HOW DO I NUKE" );
+						break;
+					case 10:
+					self BotDoChat( 100, "FUUUUCKKK!!!!! Oh man im such a STUPID IDIOT. FUUUUUUUCKKK!!" );
+						break;
+				}
 			}
 			else
 			{
-				self BotDoChat( 100, "WOW.. I could have a nuke but dumb admin disabled it for bots." );
+				switch( randomint( 6 ) )
+				{
+					case 0:
+						self BotDoChat( 100, "Seriously, who disables nukes? What is this, daycare?" );
+						break;
+
+					case 1:
+						self BotDoChat( 100, "No nukes allowed? Lame host strikes again." );
+						break;
+
+					case 2:
+						self BotDoChat( 100, "Bots can't use nukes? Nice power trip, admin." );
+						break;
+
+					case 3:
+						self BotDoChat( 100, "If nukes are too scary, maybe play something else." );
+						break;
+
+					case 4:
+						self BotDoChat( 100, "Disabling nukes just because bots are better... real mature." );
+						break;
+						
+					case 5:
+						self BotDoChat( 100, "WHAT?!?! GOD DAMMIT, HOST! ENABLE THE KILLSTREAKS! I WANNA GET A NUKE!!!" );
+						break;
 			}
 		}
 	}
