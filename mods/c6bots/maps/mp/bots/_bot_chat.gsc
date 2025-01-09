@@ -1227,11 +1227,11 @@ bot_chat_streak( streakCount )
 					case 5:
 						self BotDoChat( 100, "WHAT?!?! GOD DAMMIT, HOST! ENABLE THE KILLSTREAKS! I WANNA GET A NUKE!!!" );
 						break;
+				}
 			}
 		}
 	}
 }
-
 /*
 	Say killed stuff
 */
