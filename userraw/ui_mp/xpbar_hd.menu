@@ -19,7 +19,7 @@
 			forecolor 1 1 1 1
 			background "720_xpbar_empty"
 			textscale 0.55
-			exp rect w ( ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * 0.85 ) ) )
+			exp rect w ( ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * dvarstring( "safeArea_adjusted_horizontal" ) ) ) )
 		}
 		itemDef
 		{
@@ -40,7 +40,7 @@
 			forecolor 1 1 1 1
 			background "720_xpbar_outlineglow"
 			textscale 0.55
-			exp rect w ( ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * 0.85 ) ) )
+			exp rect w ( ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * dvarstring( "safeArea_adjusted_horizontal" ) ) ) )
 		}
 		itemDef
 		{
@@ -51,8 +51,8 @@
 			forecolor 1 1 1 0.85
 			background "720_xpbar_solid"
 			textscale 0.55
-			exp rect x ( ( ( ( ( min( ( getplayerdata( "restXPGoal" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 0.95 ) + 0.005 + int( ( min( ( getplayerdata( "restXPGoal" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 10 ) * 0.005 ) * ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * 0.85 ) ) ) - ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * 0.85 ) ) )
-			exp rect w ( ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * 0.85 ) ) )
+			exp rect x ( ( ( ( ( min( ( getplayerdata( "restXPGoal" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 0.95 ) + 0.005 + int( ( min( ( getplayerdata( "restXPGoal" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 10 ) * 0.005 ) * ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * dvarstring( "safeArea_adjusted_horizontal" ) ) ) ) - ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * dvarstring( "safeArea_adjusted_horizontal" ) ) ) )
+			exp rect w ( ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * dvarstring( "safeArea_adjusted_horizontal" ) ) ) )
 		}
 		itemDef
 		{
@@ -63,8 +63,8 @@
 			forecolor 1 0.65 0 1
 			background "xpbar_solidfill"
 			textscale 0.55
-			exp rect x ( ( ( ( ( min( ( getplayerdata( "restXPGoal" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 0.95 ) + 0.005 + int( ( min( ( getplayerdata( "restXPGoal" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 10 ) * 0.005 ) * ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * 0.85 ) ) ) - ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * 0.85 ) ) )
-			exp rect w ( ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * 0.85 ) ) )
+			exp rect x ( ( ( ( ( min( ( getplayerdata( "restXPGoal" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 0.95 ) + 0.005 + int( ( min( ( getplayerdata( "restXPGoal" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 10 ) * 0.005 ) * ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * dvarstring( "safeArea_adjusted_horizontal" ) ) ) ) - ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * dvarstring( "safeArea_adjusted_horizontal" ) ) ) )
+			exp rect w ( ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * dvarstring( "safeArea_adjusted_horizontal" ) ) ) )
 			visible when ( ( min( ( getplayerdata( "restXPGoal" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) > ( min( ( getplayerdata( "experience" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) )
 		}
 		itemDef
@@ -76,8 +76,8 @@
 			forecolor 1 1 1 1
 			background "xpbar_caprest"
 			textscale 0.55
-			exp rect x ( ( ( ( ( min( ( getplayerdata( "restXPGoal" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 0.95 ) + 0.005 + int( ( min( ( getplayerdata( "restXPGoal" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 10 ) * 0.005 ) * ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * 0.85 ) ) ) - ( ( 16 / ( 1 + ( 0.5 * dvarbool( "widescreen" ) ) ) ) * 0.85 ) )
-			exp rect w ( ( ( 16 / ( 1 + ( 0.5 * dvarbool( "widescreen" ) ) ) ) * 0.85 ) )
+			exp rect x ( ( ( ( ( min( ( getplayerdata( "restXPGoal" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 0.95 ) + 0.005 + int( ( min( ( getplayerdata( "restXPGoal" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 10 ) * 0.005 ) * ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * dvarstring( "safeArea_adjusted_horizontal" ) ) ) ) - ( ( 16 / ( 1 + ( 0.5 * dvarbool( "widescreen" ) ) ) ) * dvarstring( "safeArea_adjusted_horizontal" ) ) )
+			exp rect w ( ( ( 16 / ( 1 + ( 0.5 * dvarbool( "widescreen" ) ) ) ) * dvarstring( "safeArea_adjusted_horizontal" ) ) )
 			visible when ( ( min( ( getplayerdata( "restXPGoal" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) > ( min( ( getplayerdata( "experience" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) )
 		}
 		itemDef
@@ -99,7 +99,7 @@
 			forecolor 1 1 1 1
 			background "720_xpbar"
 			textscale 0.55
-			exp rect w ( ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * 0.85 ) ) )
+			exp rect w ( ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * dvarstring( "safeArea_adjusted_horizontal" ) ) ) )
 		}
 		itemDef
 		{
@@ -110,8 +110,8 @@
 			forecolor 1 1 1 1
 			background "720_xpbar_fade"
 			textscale 0.55
-			exp rect x ( ( ( ( ( min( ( getplayerdata( "experience" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 0.95 ) + 0.005 + int( ( min( ( getplayerdata( "experience" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 10 ) * 0.005 ) * ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * 0.85 ) ) ) - ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * 0.85 ) ) )
-			exp rect w ( ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * 0.85 ) ) )
+			exp rect x ( ( ( ( ( min( ( getplayerdata( "experience" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 0.95 ) + 0.005 + int( ( min( ( getplayerdata( "experience" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 10 ) * 0.005 ) * ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * dvarstring( "safeArea_adjusted_horizontal" ) ) ) ) - ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * dvarstring( "safeArea_adjusted_horizontal" ) ) ) )
+			exp rect w ( ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * dvarstring( "safeArea_adjusted_horizontal" ) ) ) )
 		}
 		itemDef
 		{
@@ -122,8 +122,8 @@
 			forecolor 1 1 1 1
 			background "xpbar_restfill"
 			textscale 0.55
-			exp rect x ( ( ( ( ( min( ( getplayerdata( "experience" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 0.95 ) + 0.005 + int( ( min( ( getplayerdata( "experience" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 10 ) * 0.005 ) * ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * 0.85 ) ) ) - ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * 0.85 ) ) )
-			exp rect w ( ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * 0.85 ) ) )
+			exp rect x ( ( ( ( ( min( ( getplayerdata( "experience" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 0.95 ) + 0.005 + int( ( min( ( getplayerdata( "experience" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 10 ) * 0.005 ) * ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * dvarstring( "safeArea_adjusted_horizontal" ) ) ) ) - ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * dvarstring( "safeArea_adjusted_horizontal" ) ) ) )
+			exp rect w ( ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * dvarstring( "safeArea_adjusted_horizontal" ) ) ) )
 			visible when ( ( min( ( getplayerdata( "restXPGoal" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) > ( min( ( getplayerdata( "experience" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) )
 		}
 		itemDef
@@ -135,8 +135,8 @@
 			forecolor 1 1 1 1
 			background "xpbar_xpfill"
 			textscale 0.55
-			exp rect x ( ( ( ( ( min( ( getplayerdata( "experience" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 0.95 ) + 0.005 + int( ( min( ( getplayerdata( "experience" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 10 ) * 0.005 ) * ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * 0.85 ) ) ) - ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * 0.85 ) ) )
-			exp rect w ( ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * 0.85 ) ) )
+			exp rect x ( ( ( ( ( min( ( getplayerdata( "experience" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 0.95 ) + 0.005 + int( ( min( ( getplayerdata( "experience" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 10 ) * 0.005 ) * ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * dvarstring( "safeArea_adjusted_horizontal" ) ) ) ) - ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * dvarstring( "safeArea_adjusted_horizontal" ) ) ) )
+			exp rect w ( ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * dvarstring( "safeArea_adjusted_horizontal" ) ) ) )
 			visible when ( ( min( ( getplayerdata( "restXPGoal" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) <= ( min( ( getplayerdata( "experience" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) )
 		}
 		itemDef
@@ -148,8 +148,8 @@
 			forecolor 0 0 0 1
 			background "xpbar_capshadow"
 			textscale 0.55
-			exp rect x ( ( ( ( ( min( ( getplayerdata( "experience" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 0.95 ) + 0.005 + int( ( min( ( getplayerdata( "experience" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 10 ) * 0.005 ) * ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * 0.85 ) ) ) - ( ( 16 / ( 1 + ( 0.5 * dvarbool( "widescreen" ) ) ) ) * 0.85 ) )
-			exp rect w ( ( ( 16 / ( 1 + ( 0.5 * dvarbool( "widescreen" ) ) ) ) * 0.85 ) )
+			exp rect x ( ( ( ( ( min( ( getplayerdata( "experience" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 0.95 ) + 0.005 + int( ( min( ( getplayerdata( "experience" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 10 ) * 0.005 ) * ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * dvarstring( "safeArea_adjusted_horizontal" ) ) ) ) - ( ( 16 / ( 1 + ( 0.5 * dvarbool( "widescreen" ) ) ) ) * dvarstring( "safeArea_adjusted_horizontal" ) ) )
+			exp rect w ( ( ( 16 / ( 1 + ( 0.5 * dvarbool( "widescreen" ) ) ) ) * dvarstring( "safeArea_adjusted_horizontal" ) ) )
 			visible when ( ( min( ( getplayerdata( "experience" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) >= 0.005 )
 		}
 		itemDef
@@ -161,7 +161,7 @@
 			forecolor 1 1 1 1
 			background "720_xpbar_outline"
 			textscale 0.55
-			exp rect w ( ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * 0.85 ) ) )
+			exp rect w ( ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * dvarstring( "safeArea_adjusted_horizontal" ) ) ) )
 		}
 		itemDef
 		{
@@ -172,8 +172,8 @@
 			forecolor 1 1 1 0.55
 			background "720_xpbar_solid"
 			textscale 0.55
-			exp rect x ( ( ( ( ( min( ( getplayerdata( "experience" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 0.95 ) + 0.005 + int( ( min( ( getplayerdata( "experience" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 10 ) * 0.005 ) * ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * 0.85 ) ) ) - ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * 0.85 ) ) )
-			exp rect w ( ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * 0.85 ) ) )
+			exp rect x ( ( ( ( ( min( ( getplayerdata( "experience" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 0.95 ) + 0.005 + int( ( min( ( getplayerdata( "experience" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 10 ) * 0.005 ) * ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * dvarstring( "safeArea_adjusted_horizontal" ) ) ) ) - ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * dvarstring( "safeArea_adjusted_horizontal" ) ) ) )
+			exp rect w ( ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * dvarstring( "safeArea_adjusted_horizontal" ) ) ) )
 		}
 		itemDef
 		{
@@ -184,8 +184,8 @@
 			forecolor 0.541176 0.937255 0.984314 1
 			background "xpbar_solidfill"
 			textscale 0.55
-			exp rect x ( ( ( ( ( min( ( getplayerdata( "experience" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 0.95 ) + 0.005 + int( ( min( ( getplayerdata( "experience" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 10 ) * 0.005 ) * ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * 0.85 ) ) ) - ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * 0.85 ) ) )
-			exp rect w ( ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * 0.85 ) ) )
+			exp rect x ( ( ( ( ( min( ( getplayerdata( "experience" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 0.95 ) + 0.005 + int( ( min( ( getplayerdata( "experience" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 10 ) * 0.005 ) * ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * dvarstring( "safeArea_adjusted_horizontal" ) ) ) ) - ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * dvarstring( "safeArea_adjusted_horizontal" ) ) ) )
+			exp rect w ( ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * dvarstring( "safeArea_adjusted_horizontal" ) ) ) )
 			visible when ( ( min( ( getplayerdata( "restXPGoal" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) > ( min( ( getplayerdata( "experience" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) )
 		}
 		itemDef
@@ -197,8 +197,8 @@
 			forecolor 0.913725 0.780392 0.458824 1
 			background "xpbar_solidfill"
 			textscale 0.55
-			exp rect x ( ( ( ( ( min( ( getplayerdata( "experience" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 0.95 ) + 0.005 + int( ( min( ( getplayerdata( "experience" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 10 ) * 0.005 ) * ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * 0.85 ) ) ) - ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * 0.85 ) ) )
-			exp rect w ( ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * 0.85 ) ) )
+			exp rect x ( ( ( ( ( min( ( getplayerdata( "experience" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 0.95 ) + 0.005 + int( ( min( ( getplayerdata( "experience" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 10 ) * 0.005 ) * ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * dvarstring( "safeArea_adjusted_horizontal" ) ) ) ) - ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * dvarstring( "safeArea_adjusted_horizontal" ) ) ) )
+			exp rect w ( ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * dvarstring( "safeArea_adjusted_horizontal" ) ) ) )
 			visible when ( ( min( ( getplayerdata( "restXPGoal" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) <= ( min( ( getplayerdata( "experience" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) )
 		}
 		itemDef
@@ -210,7 +210,7 @@
 			forecolor 1 1 1 1
 			background "720_xpbar_shadow"
 			textscale 0.55
-			exp rect w ( ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * 0.85 ) ) )
+			exp rect w ( ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * dvarstring( "safeArea_adjusted_horizontal" ) ) ) )
 		}
 		itemDef
 		{
@@ -221,8 +221,8 @@
 			forecolor 1 1 1 1
 			background "720_xpbar_solid"
 			textscale 0.55
-			exp rect x ( ( ( ( ( min( ( getplayerdata( "experience" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 0.95 ) + 0.005 + int( ( min( ( getplayerdata( "experience" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 10 ) * 0.005 ) * ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * 0.85 ) ) ) - ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * 0.85 ) ) )
-			exp rect w ( ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * 0.85 ) ) )
+			exp rect x ( ( ( ( ( min( ( getplayerdata( "experience" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 0.95 ) + 0.005 + int( ( min( ( getplayerdata( "experience" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 10 ) * 0.005 ) * ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * dvarstring( "safeArea_adjusted_horizontal" ) ) ) ) - ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * dvarstring( "safeArea_adjusted_horizontal" ) ) ) )
+			exp rect w ( ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * dvarstring( "safeArea_adjusted_horizontal" ) ) ) )
 		}
 		itemDef
 		{
@@ -233,8 +233,8 @@
 			forecolor 0 0 0 1
 			background "xpbar_solidfill"
 			textscale 0.55
-			exp rect x ( ( ( ( ( min( ( getplayerdata( "experience" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 0.95 ) + 0.005 + int( ( min( ( getplayerdata( "experience" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 10 ) * 0.005 ) * ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * 0.85 ) ) ) - ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * 0.85 ) ) )
-			exp rect w ( ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * 0.85 ) ) )
+			exp rect x ( ( ( ( ( min( ( getplayerdata( "experience" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 0.95 ) + 0.005 + int( ( min( ( getplayerdata( "experience" ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) / ( ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 7 ) ) - ( tablelookup( "mp/rankTable.csv" , 0 , levelforexperience( getplayerdata( "experience" ) ) , 2 ) ) ) , 0.9999 ) ) * 10 ) * 0.005 ) * ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * dvarstring( "safeArea_adjusted_horizontal" ) ) ) ) - ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * dvarstring( "safeArea_adjusted_horizontal" ) ) ) )
+			exp rect w ( ( ( ( 640 + ( 213.333 * dvarbool( "widescreen" ) ) ) * dvarstring( "safeArea_adjusted_horizontal" ) ) ) )
 		}
 	}
 }
