@@ -1,0 +1,971 @@
+	menuDef
+	{
+		name "menu_splitscreensignin"
+		rect 0 0 640 480 0 0
+		style 1
+		popup
+		forecolor 1 1 1 1
+		focuscolor 1 1 1 1
+		fullscreen 1
+		fadeCycle 1
+		fadeClamp 1
+		fadeAmount 0.1
+		soundLoop "music_mainmenu_mp"
+		onOpen
+		{
+			exec "startsplitscreensignin";
+		}
+		onEsc
+		{
+			exec "splitscreen 0";
+			exec "splitscreencontrols";
+			exec "endsplitscreensignin";
+			close "menu_splitscreensignin";
+		}
+		itemDef
+		{
+			rect 0 0 640 480 4 4
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			background "mw2_main_background"
+			textscale 0.55
+		}
+		itemDef
+		{
+			rect 0 0 1708 480 0 0
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 1 0.5
+			background "mw2_main_cloud_overlay"
+			textscale 0.55
+			exp rect x ( ( 0 - 107 ) - ( ( float( milliseconds( ) % 60000 ) / 60000 ) * ( 854 ) ) )
+		}
+		itemDef
+		{
+			rect 0 0 -1708 -480 0 0
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 1 0.5
+			background "mw2_main_cloud_overlay"
+			textscale 0.55
+			exp rect x ( ( - 107 + 854 ) + ( ( float( milliseconds( ) % 50000 ) / 50000 ) * ( 854 ) ) )
+		}
+		itemDef
+		{
+			rect 0 0 640 480 4 4
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 1 0
+			background "mockup_bg_glow"
+			textscale 0.55
+			exp forecolor a ( ( ( sin( milliseconds( ) / 1500 ) + 1 ) * 0.25 ) + 0.25 )
+		}
+		itemDef
+		{
+			rect 0 0 640 480 4 4
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 1 0
+			background "mockup_bg_glow"
+			textscale 0.55
+			exp forecolor a ( ( ( sin( milliseconds( ) / 480 ) + 1 ) * 0.25 ) + 0.25 )
+		}
+		itemDef
+		{
+			rect 0 0 1 1 2 0
+			style 3
+			decoration
+			visible 1
+			forecolor 1 0 0 0.5
+			background "white"
+			textscale 0.55
+			exp rect x ( ( 0 - ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) ) )
+			exp rect y ( 58 )
+			exp rect w ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) )
+			exp rect h ( 180 )
+			visible when ( dvarbool( "ui_splitframes" ) == 1 )
+		}
+		itemDef
+		{
+			rect 0 0 1 1 2 0
+			style 3
+			decoration
+			visible 1
+			forecolor 0 1 0 0.5
+			background "white"
+			textscale 0.55
+			exp rect x ( 0 )
+			exp rect y ( 58 )
+			exp rect w ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) )
+			exp rect h ( 180 )
+			visible when ( dvarbool( "ui_splitframes" ) == 1 )
+		}
+		itemDef
+		{
+			rect 0 0 1 1 2 0
+			style 3
+			decoration
+			visible 1
+			forecolor 0 0 1 0.5
+			background "white"
+			textscale 0.55
+			exp rect x ( ( 0 - ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) ) )
+			exp rect y ( 244 )
+			exp rect w ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) )
+			exp rect h ( 180 )
+			visible when ( dvarbool( "ui_splitframes" ) == 1 )
+		}
+		itemDef
+		{
+			rect 0 0 1 1 2 0
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 0 0.5
+			background "white"
+			textscale 0.55
+			exp rect x ( 0 )
+			exp rect y ( 244 )
+			exp rect w ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) )
+			exp rect h ( 180 )
+			visible when ( dvarbool( "ui_splitframes" ) == 1 )
+		}
+		itemDef
+		{
+			rect 0 0 272 28 1 1
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 9
+			textalign 4
+			textscale 0.5
+			text "@MENU_SPLIT_SCREEN_SIGNIN"
+		}
+		itemDef
+		{
+			rect -250 0 500 1 2 2
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 1 0.65
+			background "line_horizontal"
+			textscale 0.55
+		}
+		itemDef
+		{
+			rect 0 -176 1 352 2 2
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 1 0.65
+			background "line_vertical"
+			textscale 0.55
+		}
+		itemDef
+		{
+			rect -35 -19 10 10 2 2
+			decoration
+			visible 1
+			forecolor 0.5 0.5 0.5 1
+			textfont 10
+			textalign 1
+			textaligny 13
+			textscale 0.375
+			text "1"
+		}
+		itemDef
+		{
+			rect -35 -19 10 10 2 2
+			decoration
+			visible 1
+			forecolor 0.556863 0.929412 0.560784 1
+			textfont 10
+			textalign 1
+			textaligny 13
+			textscale 0.375
+			text "1"
+			dvarTest "leavegame0_vis"
+			showDvar { 1 }
+		}
+		itemDef
+		{
+			rect 25 -19 10 10 2 2
+			decoration
+			visible 1
+			forecolor 0.5 0.5 0.5 1
+			textfont 10
+			textalign 1
+			textaligny 13
+			textscale 0.375
+			text "2"
+		}
+		itemDef
+		{
+			rect 25 -19 10 10 2 2
+			decoration
+			visible 1
+			forecolor 0.556863 0.929412 0.560784 1
+			textfont 10
+			textalign 1
+			textaligny 13
+			textscale 0.375
+			text "2"
+			dvarTest "leavegame1_vis"
+			showDvar { 1 }
+		}
+		itemDef
+		{
+			rect -35 9 10 10 2 2
+			decoration
+			visible 1
+			forecolor 0.5 0.5 0.5 1
+			textfont 10
+			textalign 1
+			textaligny 13
+			textscale 0.375
+			text "3"
+		}
+		itemDef
+		{
+			rect -35 9 10 10 2 2
+			decoration
+			visible 1
+			forecolor 0.556863 0.929412 0.560784 1
+			textfont 10
+			textalign 1
+			textaligny 13
+			textscale 0.375
+			text "3"
+			dvarTest "leavegame2_vis"
+			showDvar { 1 }
+		}
+		itemDef
+		{
+			rect 25 9 10 10 2 2
+			decoration
+			visible 1
+			forecolor 0.5 0.5 0.5 1
+			textfont 10
+			textalign 1
+			textaligny 13
+			textscale 0.375
+			text "4"
+		}
+		itemDef
+		{
+			rect 25 9 10 10 2 2
+			decoration
+			visible 1
+			forecolor 0.556863 0.929412 0.560784 1
+			textfont 10
+			textalign 1
+			textaligny 13
+			textscale 0.375
+			text "4"
+			dvarTest "leavegame3_vis"
+			showDvar { 1 }
+		}
+		itemDef
+		{
+			rect 0 0 208 48 2 1
+			style 3
+			border 1
+			bordersize 1
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			bordercolor 0 0 0 0.75
+			background "cardtitle_248x48"
+			textscale 0.55
+			exp rect x ( ( ( ( 0 - ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) ) - ( 0 - ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) ) - ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) * 0.5 ) ) ) - ( ( 208 ) / 2 ) )
+			exp rect y ( ( 58 - 13 ) )
+			visible when ( ( dvarbool( "joingame0_vis" ) == 0 ) && ( getplayercardinfo( 0 , 2 , 0 ) != 0 ) )
+		}
+		itemDef
+		{
+			rect 0 0 160 32 2 1
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textscale 0.55
+			exp rect x ( ( ( ( 0 - ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) ) - ( 0 - ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) ) - ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) * 0.5 ) ) ) - ( ( 208 ) / 2 ) )
+			exp rect y ( ( 58 - 13 ) - 2 )
+			visible when ( ( dvarbool( "joingame0_vis" ) == 0 ) && ( getplayercardinfo( 0 , 2 , 0 ) != 0 ) )
+			exp material ( tablelookupbyrow( "mp/cardTitleTable.csv" , getplayercardinfo( 1 , 2 , 0 ) , 2 ) )
+		}
+		itemDef
+		{
+			rect 0 0 160 32 2 1
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 3
+			textalign 9
+			textscale 0.375
+			textstyle 8
+			exp rect x ( ( ( ( 0 - ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) ) - ( 0 - ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) ) - ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) * 0.5 ) ) ) - ( ( 208 ) / 2 ) )
+			exp rect y ( ( 58 - 13 ) - 2 )
+			exp forecolor r ( tablelookupbyrow( "mp/cardTitleTable.csv" , getplayercardinfo( 1 , 2 , 0 ) , 3 ) )
+			exp forecolor g ( tablelookupbyrow( "mp/cardTitleTable.csv" , getplayercardinfo( 1 , 2 , 0 ) , 4 ) )
+			exp forecolor b ( tablelookupbyrow( "mp/cardTitleTable.csv" , getplayercardinfo( 1 , 2 , 0 ) , 5 ) )
+			visible when ( ( dvarbool( "joingame0_vis" ) == 0 ) && ( getplayercardinfo( 0 , 2 , 0 ) != 0 ) )
+			exp text ( "@" + tablelookupbyrow( "mp/cardTitleTable.csv" , getplayercardinfo( 1 , 2 , 0 ) , 1 ) )
+		}
+		itemDef
+		{
+			rect 0 0 160 18 2 1
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 10
+			textalign 4
+			textalignx 8
+			textscale 0.3133
+			textstyle 8
+			exp rect x ( ( ( ( 0 - ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) ) - ( 0 - ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) ) - ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) * 0.5 ) ) ) - ( ( 208 ) / 2 ) )
+			exp rect y ( ( ( 58 - 13 ) ) + 28 )
+			visible when ( ( dvarbool( "joingame0_vis" ) == 0 ) && ( getplayercardinfo( 0 , 2 , 0 ) != 0 ) )
+			exp text ( getplayercardinfo( 8 , 2 , 0 ) )
+		}
+		itemDef
+		{
+			rect 0 0 48 48 2 1
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textscale 0.55
+			exp rect x ( ( ( ( ( 0 - ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) ) - ( 0 - ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) ) - ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) * 0.5 ) ) ) - ( ( 208 ) / 2 ) ) + 158 )
+			exp rect y ( ( ( 58 - 13 ) ) )
+			visible when ( ( dvarbool( "joingame0_vis" ) == 0 ) && ( getplayercardinfo( 0 , 2 , 0 ) != 0 ) )
+			exp material ( tablelookupbyrow( "mp/cardIconTable.csv" , getplayercardinfo( 2 , 2 , 0 ) , 1 ) )
+		}
+		itemDef
+		{
+			rect 0 0 200 20 2 0
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 1
+			textscale 0.375
+			text "@XBOXLIVE_JOINSPLITSCREENGAME_CAPS"
+			exp rect x ( ( 0 - ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) ) + ( ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) * 0.5 ) - 58 ) )
+			exp rect y ( 58 + ( 94 + ( 22 * 0 ) ) )
+			visible when ( dvarbool( ( "joingame" + "0" ) + "_vis" ) == 1 )
+		}
+		itemDef
+		{
+			rect 0 0 200 20 2 0
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 1
+			textscale 0.375
+			text "@XBOXLIVE_BACK_CAPS"
+			exp rect x ( ( 0 - ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) ) + ( ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) * 0.5 ) - 58 ) )
+			exp rect y ( 58 + ( 94 + ( 22 * 1 ) ) )
+			visible when ( dvarbool( ( "joingame" + "0" ) + "_vis" ) == 1 )
+		}
+		itemDef
+		{
+			rect 0 0 200 20 2 0
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 1
+			textscale 0.375
+			text "@MENU_WAITING_FOR_MORE_PLAYERS1"
+			exp rect x ( ( 0 - ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) ) + ( ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) * 0.5 ) - 58 ) )
+			exp rect y ( 58 + ( 94 + ( 22 * 0 ) ) )
+			visible when ( dvarbool( ( "waiting" + "0" ) + "_vis" ) == 1 )
+		}
+		itemDef
+		{
+			rect 0 0 200 20 2 0
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 1
+			textscale 0.375
+			text "@XBOXLIVE_STARTGAME_CAPS"
+			exp rect x ( ( 0 - ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) ) + ( ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) * 0.5 ) - 58 ) )
+			exp rect y ( 58 + ( 94 + ( 22 * 0 ) ) )
+			visible when ( dvarbool( ( "startgame" + "0" ) + "_vis" ) == 1 )
+		}
+		itemDef
+		{
+			rect 0 0 200 20 2 0
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 1
+			textscale 0.375
+			text "@XBOXLIVE_LEAVESPLITSCREENGAME_CAPS"
+			exp rect x ( ( 0 - ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) ) + ( ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) * 0.5 ) - 58 ) )
+			exp rect y ( 58 + ( 94 + ( 22 * 1 ) ) )
+			visible when ( dvarbool( ( "leavegame" + "0" ) + "_vis" ) == 1 )
+		}
+		itemDef
+		{
+			rect 0 0 200 20 2 0
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 1
+			textscale 0.375
+			text "@XBOXLIVE_CHANGEOFFLINEPROFILE_CAPS"
+			exp rect x ( ( 0 - ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) ) + ( ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) * 0.5 ) - 58 ) )
+			exp rect y ( 58 + ( 94 + ( 22 * 2 ) ) )
+			visible when ( dvarbool( ( "changeusers" + "0" ) + "_vis" ) == 1 )
+		}
+		itemDef
+		{
+			rect 0 0 208 48 2 1
+			style 3
+			border 1
+			bordersize 1
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			bordercolor 0 0 0 0.75
+			background "cardtitle_248x48"
+			textscale 0.55
+			exp rect x ( ( ( 0 - ( 0 - ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) ) - ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) * 0.5 ) ) ) - ( ( 208 ) / 2 ) )
+			exp rect y ( ( 58 - 13 ) )
+			visible when ( ( dvarbool( "joingame1_vis" ) == 0 ) && ( getplayercardinfo( 0 , 2 , 1 ) != 0 ) )
+		}
+		itemDef
+		{
+			rect 0 0 160 32 2 1
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textscale 0.55
+			exp rect x ( ( ( 0 - ( 0 - ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) ) - ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) * 0.5 ) ) ) - ( ( 208 ) / 2 ) )
+			exp rect y ( ( 58 - 13 ) - 2 )
+			visible when ( ( dvarbool( "joingame1_vis" ) == 0 ) && ( getplayercardinfo( 0 , 2 , 1 ) != 0 ) )
+			exp material ( tablelookupbyrow( "mp/cardTitleTable.csv" , getplayercardinfo( 1 , 2 , 1 ) , 2 ) )
+		}
+		itemDef
+		{
+			rect 0 0 160 32 2 1
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 3
+			textalign 9
+			textscale 0.375
+			textstyle 8
+			exp rect x ( ( ( 0 - ( 0 - ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) ) - ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) * 0.5 ) ) ) - ( ( 208 ) / 2 ) )
+			exp rect y ( ( 58 - 13 ) - 2 )
+			exp forecolor r ( tablelookupbyrow( "mp/cardTitleTable.csv" , getplayercardinfo( 1 , 2 , 1 ) , 3 ) )
+			exp forecolor g ( tablelookupbyrow( "mp/cardTitleTable.csv" , getplayercardinfo( 1 , 2 , 1 ) , 4 ) )
+			exp forecolor b ( tablelookupbyrow( "mp/cardTitleTable.csv" , getplayercardinfo( 1 , 2 , 1 ) , 5 ) )
+			visible when ( ( dvarbool( "joingame1_vis" ) == 0 ) && ( getplayercardinfo( 0 , 2 , 1 ) != 0 ) )
+			exp text ( "@" + tablelookupbyrow( "mp/cardTitleTable.csv" , getplayercardinfo( 1 , 2 , 1 ) , 1 ) )
+		}
+		itemDef
+		{
+			rect 0 0 160 18 2 1
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 10
+			textalign 4
+			textalignx 8
+			textscale 0.3133
+			textstyle 8
+			exp rect x ( ( ( 0 - ( 0 - ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) ) - ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) * 0.5 ) ) ) - ( ( 208 ) / 2 ) )
+			exp rect y ( ( ( 58 - 13 ) ) + 28 )
+			visible when ( ( dvarbool( "joingame1_vis" ) == 0 ) && ( getplayercardinfo( 0 , 2 , 1 ) != 0 ) )
+			exp text ( getplayercardinfo( 8 , 2 , 1 ) )
+		}
+		itemDef
+		{
+			rect 0 0 48 48 2 1
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textscale 0.55
+			exp rect x ( ( ( ( 0 - ( 0 - ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) ) - ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) * 0.5 ) ) ) - ( ( 208 ) / 2 ) ) + 158 )
+			exp rect y ( ( ( 58 - 13 ) ) )
+			visible when ( ( dvarbool( "joingame1_vis" ) == 0 ) && ( getplayercardinfo( 0 , 2 , 1 ) != 0 ) )
+			exp material ( tablelookupbyrow( "mp/cardIconTable.csv" , getplayercardinfo( 2 , 2 , 1 ) , 1 ) )
+		}
+		itemDef
+		{
+			rect 0 0 200 20 2 0
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 1
+			textscale 0.375
+			text "@XBOXLIVE_JOINSPLITSCREENGAME_CAPS"
+			exp rect x ( 0 + ( ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) * 0.5 ) - 58 ) )
+			exp rect y ( 58 + ( 94 + ( 22 * 0 ) ) )
+			visible when ( dvarbool( ( "joingame" + "1" ) + "_vis" ) == 1 )
+		}
+		itemDef
+		{
+			rect 0 0 200 20 2 0
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 1
+			textscale 0.375
+			text "@XBOXLIVE_BACK_CAPS"
+			exp rect x ( 0 + ( ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) * 0.5 ) - 58 ) )
+			exp rect y ( 58 + ( 94 + ( 22 * 1 ) ) )
+			visible when ( dvarbool( ( "joingame" + "1" ) + "_vis" ) == 1 )
+		}
+		itemDef
+		{
+			rect 0 0 200 20 2 0
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 1
+			textscale 0.375
+			text "@MENU_WAITING_FOR_MORE_PLAYERS1"
+			exp rect x ( 0 + ( ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) * 0.5 ) - 58 ) )
+			exp rect y ( 58 + ( 94 + ( 22 * 0 ) ) )
+			visible when ( dvarbool( ( "waiting" + "1" ) + "_vis" ) == 1 )
+		}
+		itemDef
+		{
+			rect 0 0 200 20 2 0
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 1
+			textscale 0.375
+			text "@XBOXLIVE_STARTGAME_CAPS"
+			exp rect x ( 0 + ( ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) * 0.5 ) - 58 ) )
+			exp rect y ( 58 + ( 94 + ( 22 * 0 ) ) )
+			visible when ( dvarbool( ( "startgame" + "1" ) + "_vis" ) == 1 )
+		}
+		itemDef
+		{
+			rect 0 0 200 20 2 0
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 1
+			textscale 0.375
+			text "@XBOXLIVE_LEAVESPLITSCREENGAME_CAPS"
+			exp rect x ( 0 + ( ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) * 0.5 ) - 58 ) )
+			exp rect y ( 58 + ( 94 + ( 22 * 1 ) ) )
+			visible when ( dvarbool( ( "leavegame" + "1" ) + "_vis" ) == 1 )
+		}
+		itemDef
+		{
+			rect 0 0 200 20 2 0
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 1
+			textscale 0.375
+			text "@XBOXLIVE_CHANGEOFFLINEPROFILE_CAPS"
+			exp rect x ( 0 + ( ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) * 0.5 ) - 58 ) )
+			exp rect y ( 58 + ( 94 + ( 22 * 2 ) ) )
+			visible when ( dvarbool( ( "changeusers" + "1" ) + "_vis" ) == 1 )
+		}
+		itemDef
+		{
+			rect 0 0 208 48 2 1
+			style 3
+			border 1
+			bordersize 1
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			bordercolor 0 0 0 0.75
+			background "cardtitle_248x48"
+			textscale 0.55
+			exp rect x ( ( ( ( 0 - ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) ) - ( 0 - ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) ) - ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) * 0.5 ) ) ) - ( ( 208 ) / 2 ) )
+			exp rect y ( ( 244 - 13 ) )
+			visible when ( ( dvarbool( "joingame2_vis" ) == 0 ) && ( getplayercardinfo( 0 , 2 , 2 ) != 0 ) )
+		}
+		itemDef
+		{
+			rect 0 0 160 32 2 1
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textscale 0.55
+			exp rect x ( ( ( ( 0 - ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) ) - ( 0 - ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) ) - ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) * 0.5 ) ) ) - ( ( 208 ) / 2 ) )
+			exp rect y ( ( 244 - 13 ) - 2 )
+			visible when ( ( dvarbool( "joingame2_vis" ) == 0 ) && ( getplayercardinfo( 0 , 2 , 2 ) != 0 ) )
+			exp material ( tablelookupbyrow( "mp/cardTitleTable.csv" , getplayercardinfo( 1 , 2 , 2 ) , 2 ) )
+		}
+		itemDef
+		{
+			rect 0 0 160 32 2 1
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 3
+			textalign 9
+			textscale 0.375
+			textstyle 8
+			exp rect x ( ( ( ( 0 - ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) ) - ( 0 - ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) ) - ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) * 0.5 ) ) ) - ( ( 208 ) / 2 ) )
+			exp rect y ( ( 244 - 13 ) - 2 )
+			exp forecolor r ( tablelookupbyrow( "mp/cardTitleTable.csv" , getplayercardinfo( 1 , 2 , 2 ) , 3 ) )
+			exp forecolor g ( tablelookupbyrow( "mp/cardTitleTable.csv" , getplayercardinfo( 1 , 2 , 2 ) , 4 ) )
+			exp forecolor b ( tablelookupbyrow( "mp/cardTitleTable.csv" , getplayercardinfo( 1 , 2 , 2 ) , 5 ) )
+			visible when ( ( dvarbool( "joingame2_vis" ) == 0 ) && ( getplayercardinfo( 0 , 2 , 2 ) != 0 ) )
+			exp text ( "@" + tablelookupbyrow( "mp/cardTitleTable.csv" , getplayercardinfo( 1 , 2 , 2 ) , 1 ) )
+		}
+		itemDef
+		{
+			rect 0 0 160 18 2 1
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 10
+			textalign 4
+			textalignx 8
+			textscale 0.3133
+			textstyle 8
+			exp rect x ( ( ( ( 0 - ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) ) - ( 0 - ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) ) - ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) * 0.5 ) ) ) - ( ( 208 ) / 2 ) )
+			exp rect y ( ( ( 244 - 13 ) ) + 28 )
+			visible when ( ( dvarbool( "joingame2_vis" ) == 0 ) && ( getplayercardinfo( 0 , 2 , 2 ) != 0 ) )
+			exp text ( getplayercardinfo( 8 , 2 , 2 ) )
+		}
+		itemDef
+		{
+			rect 0 0 48 48 2 1
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textscale 0.55
+			exp rect x ( ( ( ( ( 0 - ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) ) - ( 0 - ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) ) - ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) * 0.5 ) ) ) - ( ( 208 ) / 2 ) ) + 158 )
+			exp rect y ( ( ( 244 - 13 ) ) )
+			visible when ( ( dvarbool( "joingame2_vis" ) == 0 ) && ( getplayercardinfo( 0 , 2 , 2 ) != 0 ) )
+			exp material ( tablelookupbyrow( "mp/cardIconTable.csv" , getplayercardinfo( 2 , 2 , 2 ) , 1 ) )
+		}
+		itemDef
+		{
+			rect 0 0 200 20 2 0
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 1
+			textscale 0.375
+			text "@XBOXLIVE_JOINSPLITSCREENGAME_CAPS"
+			exp rect x ( ( 0 - ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) ) + ( ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) * 0.5 ) - 58 ) )
+			exp rect y ( 244 + ( 94 + ( 22 * 0 ) ) )
+			visible when ( dvarbool( ( "joingame" + "2" ) + "_vis" ) == 1 )
+		}
+		itemDef
+		{
+			rect 0 0 200 20 2 0
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 1
+			textscale 0.375
+			text "@XBOXLIVE_BACK_CAPS"
+			exp rect x ( ( 0 - ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) ) + ( ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) * 0.5 ) - 58 ) )
+			exp rect y ( 244 + ( 94 + ( 22 * 1 ) ) )
+			visible when ( dvarbool( ( "joingame" + "2" ) + "_vis" ) == 1 )
+		}
+		itemDef
+		{
+			rect 0 0 200 20 2 0
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 1
+			textscale 0.375
+			text "@MENU_WAITING_FOR_MORE_PLAYERS1"
+			exp rect x ( ( 0 - ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) ) + ( ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) * 0.5 ) - 58 ) )
+			exp rect y ( 244 + ( 94 + ( 22 * 0 ) ) )
+			visible when ( dvarbool( ( "waiting" + "2" ) + "_vis" ) == 1 )
+		}
+		itemDef
+		{
+			rect 0 0 200 20 2 0
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 1
+			textscale 0.375
+			text "@XBOXLIVE_STARTGAME_CAPS"
+			exp rect x ( ( 0 - ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) ) + ( ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) * 0.5 ) - 58 ) )
+			exp rect y ( 244 + ( 94 + ( 22 * 0 ) ) )
+			visible when ( dvarbool( ( "startgame" + "2" ) + "_vis" ) == 1 )
+		}
+		itemDef
+		{
+			rect 0 0 200 20 2 0
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 1
+			textscale 0.375
+			text "@XBOXLIVE_LEAVESPLITSCREENGAME_CAPS"
+			exp rect x ( ( 0 - ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) ) + ( ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) * 0.5 ) - 58 ) )
+			exp rect y ( 244 + ( 94 + ( 22 * 1 ) ) )
+			visible when ( dvarbool( ( "leavegame" + "2" ) + "_vis" ) == 1 )
+		}
+		itemDef
+		{
+			rect 0 0 200 20 2 0
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 1
+			textscale 0.375
+			text "@XBOXLIVE_CHANGEOFFLINEPROFILE_CAPS"
+			exp rect x ( ( 0 - ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) ) + ( ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) * 0.5 ) - 58 ) )
+			exp rect y ( 244 + ( 94 + ( 22 * 2 ) ) )
+			visible when ( dvarbool( ( "changeusers" + "2" ) + "_vis" ) == 1 )
+		}
+		itemDef
+		{
+			rect 0 0 208 48 2 1
+			style 3
+			border 1
+			bordersize 1
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			bordercolor 0 0 0 0.75
+			background "cardtitle_248x48"
+			textscale 0.55
+			exp rect x ( ( ( 0 - ( 0 - ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) ) - ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) * 0.5 ) ) ) - ( ( 208 ) / 2 ) )
+			exp rect y ( ( 244 - 13 ) )
+			visible when ( ( dvarbool( "joingame3_vis" ) == 0 ) && ( getplayercardinfo( 0 , 2 , 3 ) != 0 ) )
+		}
+		itemDef
+		{
+			rect 0 0 160 32 2 1
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textscale 0.55
+			exp rect x ( ( ( 0 - ( 0 - ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) ) - ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) * 0.5 ) ) ) - ( ( 208 ) / 2 ) )
+			exp rect y ( ( 244 - 13 ) - 2 )
+			visible when ( ( dvarbool( "joingame3_vis" ) == 0 ) && ( getplayercardinfo( 0 , 2 , 3 ) != 0 ) )
+			exp material ( tablelookupbyrow( "mp/cardTitleTable.csv" , getplayercardinfo( 1 , 2 , 3 ) , 2 ) )
+		}
+		itemDef
+		{
+			rect 0 0 160 32 2 1
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 3
+			textalign 9
+			textscale 0.375
+			textstyle 8
+			exp rect x ( ( ( 0 - ( 0 - ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) ) - ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) * 0.5 ) ) ) - ( ( 208 ) / 2 ) )
+			exp rect y ( ( 244 - 13 ) - 2 )
+			exp forecolor r ( tablelookupbyrow( "mp/cardTitleTable.csv" , getplayercardinfo( 1 , 2 , 3 ) , 3 ) )
+			exp forecolor g ( tablelookupbyrow( "mp/cardTitleTable.csv" , getplayercardinfo( 1 , 2 , 3 ) , 4 ) )
+			exp forecolor b ( tablelookupbyrow( "mp/cardTitleTable.csv" , getplayercardinfo( 1 , 2 , 3 ) , 5 ) )
+			visible when ( ( dvarbool( "joingame3_vis" ) == 0 ) && ( getplayercardinfo( 0 , 2 , 3 ) != 0 ) )
+			exp text ( "@" + tablelookupbyrow( "mp/cardTitleTable.csv" , getplayercardinfo( 1 , 2 , 3 ) , 1 ) )
+		}
+		itemDef
+		{
+			rect 0 0 160 18 2 1
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 10
+			textalign 4
+			textalignx 8
+			textscale 0.3133
+			textstyle 8
+			exp rect x ( ( ( 0 - ( 0 - ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) ) - ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) * 0.5 ) ) ) - ( ( 208 ) / 2 ) )
+			exp rect y ( ( ( 244 - 13 ) ) + 28 )
+			visible when ( ( dvarbool( "joingame3_vis" ) == 0 ) && ( getplayercardinfo( 0 , 2 , 3 ) != 0 ) )
+			exp text ( getplayercardinfo( 8 , 2 , 3 ) )
+		}
+		itemDef
+		{
+			rect 0 0 48 48 2 1
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textscale 0.55
+			exp rect x ( ( ( ( 0 - ( 0 - ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) ) - ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) * 0.5 ) ) ) - ( ( 208 ) / 2 ) ) + 158 )
+			exp rect y ( ( ( 244 - 13 ) ) )
+			visible when ( ( dvarbool( "joingame3_vis" ) == 0 ) && ( getplayercardinfo( 0 , 2 , 3 ) != 0 ) )
+			exp material ( tablelookupbyrow( "mp/cardIconTable.csv" , getplayercardinfo( 2 , 2 , 3 ) , 1 ) )
+		}
+		itemDef
+		{
+			rect 0 0 200 20 2 0
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 1
+			textscale 0.375
+			text "@XBOXLIVE_JOINSPLITSCREENGAME_CAPS"
+			exp rect x ( 0 + ( ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) * 0.5 ) - 58 ) )
+			exp rect y ( 244 + ( 94 + ( 22 * 0 ) ) )
+			visible when ( dvarbool( ( "joingame" + "3" ) + "_vis" ) == 1 )
+		}
+		itemDef
+		{
+			rect 0 0 200 20 2 0
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 1
+			textscale 0.375
+			text "@XBOXLIVE_BACK_CAPS"
+			exp rect x ( 0 + ( ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) * 0.5 ) - 58 ) )
+			exp rect y ( 244 + ( 94 + ( 22 * 1 ) ) )
+			visible when ( dvarbool( ( "joingame" + "3" ) + "_vis" ) == 1 )
+		}
+		itemDef
+		{
+			rect 0 0 200 20 2 0
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 1
+			textscale 0.375
+			text "@MENU_WAITING_FOR_MORE_PLAYERS1"
+			exp rect x ( 0 + ( ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) * 0.5 ) - 58 ) )
+			exp rect y ( 244 + ( 94 + ( 22 * 0 ) ) )
+			visible when ( dvarbool( ( "waiting" + "3" ) + "_vis" ) == 1 )
+		}
+		itemDef
+		{
+			rect 0 0 200 20 2 0
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 1
+			textscale 0.375
+			text "@XBOXLIVE_STARTGAME_CAPS"
+			exp rect x ( 0 + ( ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) * 0.5 ) - 58 ) )
+			exp rect y ( 244 + ( 94 + ( 22 * 0 ) ) )
+			visible when ( dvarbool( ( "startgame" + "3" ) + "_vis" ) == 1 )
+		}
+		itemDef
+		{
+			rect 0 0 200 20 2 0
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 1
+			textscale 0.375
+			text "@XBOXLIVE_LEAVESPLITSCREENGAME_CAPS"
+			exp rect x ( 0 + ( ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) * 0.5 ) - 58 ) )
+			exp rect y ( 244 + ( 94 + ( 22 * 1 ) ) )
+			visible when ( dvarbool( ( "leavegame" + "3" ) + "_vis" ) == 1 )
+		}
+		itemDef
+		{
+			rect 0 0 200 20 2 0
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 1
+			textscale 0.375
+			text "@XBOXLIVE_CHANGEOFFLINEPROFILE_CAPS"
+			exp rect x ( 0 + ( ( ( 272 + ( 91 * dvarint( "wideScreen" ) ) ) * 0.5 ) - 58 ) )
+			exp rect y ( 244 + ( 94 + ( 22 * 2 ) ) )
+			visible when ( dvarbool( ( "changeusers" + "3" ) + "_vis" ) == 1 )
+		}
+		itemDef
+		{
+			rect -100 0 100 600 1 1
+			style 1
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			backcolor 0.5 0.6 0.8 0.5
+			textscale 0.55
+			dvarTest "ui_safearea"
+			showDvar { 1 }
+		}
+		itemDef
+		{
+			rect 0 -600 100 600 3 3
+			style 1
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			backcolor 0.5 0.6 0.8 0.5
+			textscale 0.55
+			dvarTest "ui_safearea"
+			showDvar { 1 }
+		}
+		itemDef
+		{
+			rect -900 -100 900 100 3 1
+			style 1
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			backcolor 0.5 0.6 0.8 0.5
+			textscale 0.55
+			dvarTest "ui_safearea"
+			showDvar { 1 }
+		}
+		itemDef
+		{
+			rect 0 0 900 100 1 3
+			style 1
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			backcolor 0.5 0.6 0.8 0.5
+			textscale 0.55
+			dvarTest "ui_safearea"
+			showDvar { 1 }
+		}
+		itemDef
+		{
+			rect 390 56 0 0 0 0
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 1
+			textscale 0.375
+			visible when ( dvarstring( "ui_debug_localVarString" ) != "" )
+			exp text ( dvarstring( "ui_debug_localVarString" ) + ": " + localvarstring( dvarstring( "ui_debug_localVarString" ) ) )
+		}
+		itemDef
+		{
+			rect 390 72 0 0 0 0
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 1
+			textscale 0.375
+			visible when ( dvarstring( "ui_debug_localVarInt" ) != "" )
+			exp text ( dvarstring( "ui_debug_localVarInt" ) + ": " + localvarint( dvarstring( "ui_debug_localVarInt" ) ) )
+		}
+		itemDef
+		{
+			rect 390 72 0 0 0 0
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 1
+			textscale 0.375
+			visible when ( dvarstring( "ui_debug_localVarBool" ) != "" )
+			exp text ( dvarstring( "ui_debug_localVarBool" ) + ": " + localvarbool( dvarstring( "ui_debug_localVarBool" ) ) )
+		}
+	}

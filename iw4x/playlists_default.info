@@ -1,0 +1,1420 @@
+version 450
+
+rule party_gameStartTimerLength 8
+rule scr_xpscale 1
+rule scr_restxp_enable 0
+rule session_immediateDeleteTinySessions 1
+rule requireOpenNat 1
+rule cg_drawfps 0
+rule party_minlobbytime 45
+rule session_advertiseFailedSearchCount 12
+rule com_maxfps 85
+set scr_airdrop_nuke 0
+set scr_airdrop_mega_nuke 0
+set bg_fallDamageMaxHeight 300
+set bg_fallDamageMinHeight 128
+set bg_forceDualWield 0
+set bg_forceExplosiveBullets 0
+set bg_viewBobMax 8
+set bullet_penetration_enabled 1
+set com_timescale 1
+set friction 5.5
+set g_synchronousClients 0
+set g_speed 190
+set jump_height 39
+set jump_ladderPushVel 128
+set jump_slowdownEnable 1
+set mantle_check_radius 0.1
+set mantle_check_angle 60
+set mantle_enable 1
+set player_backSpeedScale 1
+set player_breath_fire_delay 0
+set player_breath_gasp_lerp 6
+set player_breath_gasp_scale 4.5
+set player_breath_gasp_time 1
+set player_breath_hold_lerp 1
+set player_breath_hold_time 4.5
+set player_dmgtimer_minScale 0
+set player_footstepsThreshhold 60
+set player_lastStandCrawlSpeedScale 0.2
+set player_lastStandDebug 0
+set player_sprintForwardMinimum 105
+set player_sprintMinTime 1
+set player_sprintRechargePause 0
+set player_sprintSpeedScale 1.5
+set player_sprintTime 4
+set player_sprintUnlimited 0
+set player_strafeSpeedScale 1
+set player_view_pitch_down 70
+set player_view_pitch_up 70
+set sv_clientSideBullets 1
+set timescale 1
+set aim_autoaim_enabled 0
+set aim_autoaim_debug 0
+set aim_lockon_debug 0
+set aim_lockon_strength 0.6
+set aim_lockon_deflection 0.05
+set aim_aimAssistRangeScale 1.0
+set aim_lockon_region_width 90
+set aim_lockon_region_height 90
+set aim_automelee_lerp 40
+set aim_automelee_region_width 320
+set aim_automelee_region_height 240
+set aim_automelee_range 128
+set aim_automelee_debug 0
+set aim_slowdown_debug 0
+set aim_slowdown_pitch_scale 0.4
+set aim_slowdown_pitch_scale_ads 0.5
+set aim_slowdown_yaw_scale 0.4
+set aim_slowdown_yaw_scale_ads 0.5
+set aim_slowdown_region_width 90
+set aim_slowdown_region_height 90
+set cg_drawThroughWalls 0
+set party_connectToOthers 0
+set party_hostmigration 0
+
+set bg_aimSpreadMoveSpeedThreshold 11
+set bg_maxGrenadeIndicatorSpeed 100
+set mantle_check_range 20
+set jump_spreadAdd 64
+set player_adsExitDelay 0
+set player_runbkThreshhold 60
+set player_sprintCameraBob 0.5
+set player_sprintStrafeSpeedScale 0.667
+set player_sprintThreshhold 185
+set stopspeed 100
+set cg_chatWithOtherTeams 0
+set compassEnemyFootstepEnabled 0
+set compassRadarUpdateTime 4.0
+set compassFastRadarUpdateTime 2.0
+set r_znear 4.0
+set r_znear_depthhack 0.1
+set developer 0
+set cg_drawShellshock 1
+set motionTrackerRange 1600.0
+set motionTrackerSweepInterval 3.0
+set motionTrackerSweepAngle 90.0
+
+gametype tdm
+name english "Team Deathmatch"
+name french "Match   mort par  quipe"
+name italian "Deathmatch a squadre"
+name german "Team-Deathmatch"
+name spanish "Duelo por equipos"
+name polish "DM Dru ynowy"
+name russian "             "
+name japanese " ` [   f X } b `"
+script war
+
+gametype 3p_tdm
+name english "3rd Person Team Deathmatch"
+name french "Match   mort  quipe 3e personne"
+name italian "Deathmatch a squadre 3  P."
+name german "Externe Ansicht - Team-Deathmatch"
+name spanish "Duelo por equipos en TP"
+name polish "DM Dru ynowy - 3. os."
+name russian "             ,    3-       "
+name japanese "TPS ` [   f X } b `"
+script war
+rule scr_thirdperson 1
+rule scr_war_scorelimit 5000
+
+gametype tc_tdm //Created for Team Tactical playlist
+name english "Team Deathmatch"
+name french "Match   mort par  quipe"
+name italian "Deathmatch a squadre"
+name german "Team-Deathmatch"
+name spanish "Duelo por equipos"
+name polish "DM Dru ynowy"
+name russian "             "
+name japanese " ` [   f X } b `"
+script war
+rule scr_war_scorelimit 5000
+
+gametype hc_tdm
+name english "Hardcore Team Deathmatch"
+name french "Match   mort par  quipe Hardcore."
+name italian "Deathmatch a squadre - veterano"
+name german "Hardcore-Team-Deathmatch"
+name spanish "Duelo por equipos extremo"
+name polish "DM Dru ynowy hardcore"
+name russian "   .    ,      .          "
+name japanese " n [ h R A F ` [   f X } b `"
+script war
+hardcore
+rule scr_team_fftype 1
+rule scr_player_healthregentime 0
+rule scr_player_maxhealth 30
+rule scr_war_waverespawndelay 15
+rule scr_game_allowkillcam 0
+rule scr_hardcore 1
+rule ui_hud_hardcore 1
+rule g_hardcore 1
+
+gametype ric_tdm
+name english "Ricochet Team Deathmatch"
+name french "Match   mort par  quipe Ricochet"
+name italian "Deathmatch ricochet a squadre"
+name german "Querschl ger-Team-Deathmatch"
+name spanish "Duelo por equipos con rebote"
+name polish "DM Dru ynowy rykoszet"
+name russian "             ,        "
+name japanese " ` [   f X } b ` F   e"
+script war
+hardcore
+rule scr_team_fftype 2
+rule scr_player_healthregentime 0
+rule scr_player_maxhealth 30
+rule scr_war_waverespawndelay 15
+rule scr_game_allowkillcam 0
+rule scr_hardcore 1
+rule ui_hud_hardcore 1
+rule g_hardcore 1
+
+gametype turbo_tdm
+name english "Team Deathmatch Express"
+name french "Match   mort par  quipe Express"
+name italian "Deathmatch a squadre turbo"
+name german "Express-Team-Deathmatch"
+name spanish "Duelo por equipos expr s"
+name polish "Ekspresowy DM dru ynowy"
+name russian "                     "
+name japanese " Z k ^ F ` [   f X } b `"
+script war
+
+// ****DOMINATION****
+
+gametype dom
+name english "Domination"
+name french "Domination"
+name italian "Dominio"
+name german "Herrschaft"
+name spanish "Dominio"
+name polish "Dominacja"
+name russian "             "
+name japanese " h ~ l [ V    "
+script dom
+
+gametype 3p_dom
+name english "3rd Person Domination"
+name french "Domination 3e personne"
+name italian "Dominio 3  P."
+name german "Externe Ansicht - Herrschaft"
+name spanish "Dominio en TP"
+name polish "Dominacja - 3. os."
+name russian "             ,    3-       "
+name japanese "TPS h ~ l [ V    "
+script dom
+rule scr_thirdperson 1
+
+// ****HEADQUARTERS****
+
+gametype hq_pro
+name english "Headquarters Pro"
+name french "Quartier g n ral Pro"
+name italian "QG Pro"
+name german "Hauptquartier Pro"
+name spanish "Cuarteles (Pro)"
+name polish "Sztab prof."
+name russian "    ,      ."
+name japanese " w b h N H [ ^ [PRO"
+script koth
+rule koth_spawntime 30
+rule scr_koth_scorelimit 200
+rule scr_koth_timelimit 20
+
+gametype ric_hq_pro
+name english "Hardcore Headquarters Pro"
+name french "Ricochet Hardcore: QG Pro"
+name italian "Ricochet veterano: QG Pro"
+name german "Hardcore-Querschl ger: HQ Pro"
+name spanish "Extremo con rebote: Cuarteles (Pro)"
+name polish "Rykosz. hard.: Sztab pro."
+name russian "    ,       (       ,      .          )"
+name japanese "HC/   e F w b h N H [ ^ [PRO"
+script koth
+hardcore
+rule scr_hardcore 1
+rule scr_player_healthregentime 0
+rule scr_team_fftype 2
+rule scr_player_maxhealth 30
+rule scr_game_allowkillcam 0
+rule ui_hud_hardcore 1
+rule g_hardcore 1
+rule koth_spawntime 30
+rule scr_koth_scorelimit 200
+rule scr_koth_timelimit 20
+
+// ****SABOTAGE****
+
+gametype sab
+name english "Sabotage"
+name french "Sabotage"
+name italian "Sabotaggio"
+name german "Sabotage"
+name spanish "Sabotaje"
+name polish "Sabota "
+name russian "        "
+name japanese " T { ^ [ W  "
+script sab
+rule scr_sab_bombtimer 45
+
+gametype hc_sab //Created for hardcore sab
+name english "Hardcore Sabotage"
+name french "Sabotage hardcore."
+name italian "Modalit  Sabotaggio Veterano"
+name german "Hardcore-Sabotage"
+name spanish "Sabotaje extremo"
+name polish "Hardcore Sabota "
+name russian "        ,                     "
+name japanese " n [ h R A F T { ^ [ W  "
+script sab
+hardcore
+rule scr_team_fftype 1
+rule scr_player_healthregentime 0
+rule scr_player_maxhealth 30
+rule scr_war_waverespawndelay 15
+rule scr_game_allowkillcam 0
+rule scr_hardcore 1
+rule ui_hud_hardcore 1
+rule g_hardcore 1
+
+
+// ****SEARCH AND DESTROY****
+
+gametype sd
+name english "Search and Destroy"
+name french "Recherche et destruction"
+name italian "Cerca e distruggi"
+name german "Suchen und Zerst ren"
+name spanish "Buscar y destruir"
+name polish "Znajd  i zniszcz"
+name russian "     "
+name japanese " T [ `   f X g   C"
+script sd
+
+gametype hc_sd
+name english "Hardcore Search and Destroy"
+name french "Recherche et destruction Hardcore"
+name italian "Cerca e distruggi - veterano"
+name german "Hardcore-Suchen und Zerst ren"
+name spanish "Buscar y destruir extremo"
+name polish "Odszukaj i zniszcz hardcore"
+name russian "     ,      .          "
+name japanese " n [ h R A F T [ `& f X g   C"
+script sd
+hardcore
+rule scr_team_fftype 1
+rule scr_player_maxhealth 30
+rule scr_player_healthregentime 0
+rule scr_game_allowkillcam 0
+rule scr_hardcore 1
+rule ui_hud_hardcore 1
+rule g_hardcore 1
+
+gametype ric_sd
+name english "Hardcore Search and Destroy"
+name french "Recherche et destruction Hardcore"
+name italian "Cerca e distruggi - veterano"
+name german "Hardcore-Suchen und Zerst ren"
+name spanish "Buscar y destruir extremo"
+name polish "Znajd  i zniszcz hardcore"
+name russian "     ,     .          "
+name japanese " n [ h R A F T [ `& f X g   C"
+script sd
+hardcore
+rule scr_team_fftype 2
+rule scr_player_maxhealth 30
+rule scr_player_healthregentime 0
+rule scr_game_allowkillcam 0
+rule scr_hardcore 1
+rule ui_hud_hardcore 1
+rule g_hardcore 1
+
+
+// ****ARENA****
+
+gametype arena
+name english "Arena"
+name french "Ar ne"
+name italian "Arena"
+name german "Arena"
+name spanish "Arena"
+name polish "Arena"
+name russian "     "
+name japanese " A   [ i"
+script arena
+
+// ****Demolition****
+
+gametype dd
+name english "Demolition"
+name french "D molition"
+name italian "Demolizione"
+name german "Sprengkommando"
+name spanish "Demolici n"
+name polish "Wysadzanie"
+name russian "           "
+name japanese " f     b V    "
+script dd
+
+gametype 3p_dd
+name english "3rd Person Demolition"
+name french "D molition 3e personne"
+name italian "Demolizione 3  P."
+name german "Externe Ansicht - Sprengkommando"
+name spanish "Demolici n en TP"
+name polish "Wysadzanie - 3. os."
+name russian "           ,    3-       "
+name japanese "TPS f     b V    "
+script dd
+rule scr_thirdperson 1
+
+gametype hc_dd //Created for hardcore demolition
+name english "Hardcore Demolition"
+name french "D molition hardcore."
+name italian "Modalit  Demolizione Veterano"
+name german "Hardcore-Sprengkommando"
+name spanish "Demolici n extrema"
+name polish "Hardcore Wysadzanie"
+name russian "           ,                     "
+name japanese " n [ h R A F f     b V    "
+script dd
+hardcore
+rule scr_team_fftype 1
+rule scr_player_healthregentime 0
+rule scr_player_maxhealth 30
+rule scr_war_waverespawndelay 15
+rule scr_game_allowkillcam 0
+rule scr_hardcore 1
+rule ui_hud_hardcore 1
+rule g_hardcore 1
+
+
+// ****FREE FOR ALL****
+
+gametype ffa
+name english "Free-for-all"
+name french "M l e g n rale"
+name italian "Tutti contro tutti"
+name german "Frei f r alle"
+name spanish "Duelo a muerte"
+name polish "Dowolna"
+name russian "              "
+name japanese " t   [ E t H [ E I [  "
+script dm
+rule scr_player_forceautoassign 0
+
+// ****CAGE MATCH****
+
+gametype 1v1
+name english "Cage Match"
+script dm
+rule scr_thirdperson 0
+rule scr_dm_scorelimit 1000
+
+// ****3RD PERSON CAGE MATCH****
+
+gametype 3p_1v1
+name english "3rd Person Cage Match"
+script dm
+rule scr_thirdperson 1
+rule scr_dm_scorelimit 1000
+
+// ****CAPTURE THE FLAG****
+
+gametype ctf
+name english "Capture the Flag"
+name french "Capture du drapeau"
+name italian "Cattura la bandiera"
+name german "Capture the Flag"
+name spanish "Tomar la bandera"
+name polish "Zdobycie flagi"
+name russian "            "
+name japanese " L   v `   [  U  t   b O"
+script ctf
+
+gametype 3p_ctf
+name english "3rd Person Capture the Flag"
+name french "Capture du drapeau 3e personne"
+name italian "Cattura la bandiera 3  P."
+name german "Externe Ansicht - Capture the Flag"
+name spanish "Tomar la bandera en TP"
+name polish "Zdobycie flagi - 3. os."
+name russian "            ,    3-       "
+name japanese "TPS L   v `   [ E U E t   b O"
+script ctf
+rule scr_thirdperson 1
+
+gametype hc_ctf // Created for hardcore CTF
+name english "Hardcore Capture the Flag"
+name french "Capture du drapeau hardcore."
+name italian "Modalit  Cattura la bandiera Veterano"
+name german "Hardcore-Capture the Flag"
+name spanish "Tomar la bandera extremo"
+name polish "Hardcore CTF"
+name russian "            ,                     "
+name japanese " n [ h R A FCTF"
+script ctf
+hardcore
+rule scr_team_fftype 1
+rule scr_player_healthregentime 0
+rule scr_player_maxhealth 30
+rule scr_game_allowkillcam 0
+rule scr_hardcore 1
+rule ui_hud_hardcore 1
+rule g_hardcore 1
+
+
+playlist 1 // tdm gametype
+name english "Team Deathmatch"
+name french "Match   mort par  quipe"
+name italian "Deathmatch a squadre"
+name german "Team-Deathmatch"
+name spanish "Duelo por equipos"
+name polish "DM Dru ynowy"
+name russian "             "
+name japanese " ` [   f X } b `"
+name korean "         ġ"
+description english "Straight up Team Deathmatch.  Use teamwork to kill enemy players and reach the score limit.\n\n__________\nPlayers:8-12."
+description french "Un Match   mort par  quipe classique. Progressez avec vos co quipiers pour exterminer vos ennemis et atteindre la limite de score.\n\n__________\nJoueurs : 8-12"
+description italian "Deathmatch a squadre, nudo e crudo. Coordina il lavoro di squadra per eliminare i giocatori nemici e realizzare il punteggio stabilito.\n\n__________\nGiocatori: 8-12"
+description german "Ganz normales Team-Deathmatch. Schalten Sie mit Teamwork gegnerische Spieler aus und erreichen Sie das Punktlimit.\n\n__________\nSpieler: 8-12"
+description spanish "Duelo por equipos cl sico. Colabora con tus compa eros para acabar con los enemigos y alcanza el l mite de puntos.\n\n__________\nJugadores: 8-12"
+description polish "Normalny DM Dru ynowy. Jako dru yna, zabijajcie przeciwnik w i osi gnijcie limit punkt w.\n__________\nGracze:8-12"
+description russian "                              .                                                                               .\n\n__________\n      : 8-12"
+description japanese " ^         ̃` [   f X } b ` B\n G v   C   [  ` [     [ N œ|  \n X R A   ~ b g ɓ  B    Ώ      B\n\n__________\n v   C   [   F8 `12"
+description korean "                ġ.      ÷  ̾        ̰   ְ              ϱ           ũ        ض .\n__________\n ÷  ̾ :8-12"
+unlockxp 0
+maxparty 6
+rule party_minplayers 1
+rule party_maxplayers 12
+rule party_matchedplayercount 4
+
+mp_afghan,tdm,4
+mp_boneyard,tdm,4
+mp_brecourt,tdm,4
+mp_checkpoint,tdm,4
+mp_derail,tdm,4
+mp_estate,tdm,4
+mp_favela,tdm,4
+mp_highrise,tdm,4
+mp_invasion,tdm,4
+mp_nightshift,tdm,4
+mp_quarry,tdm,4
+mp_rundown,tdm,4
+mp_rust,tdm,1
+mp_subbase,tdm,4
+mp_terminal,tdm,4
+mp_underpass,tdm,4
+
+playlist 2 // ffa gametype
+name english "Free-for-all^8*^7"
+name french "M l e g n rale"
+name italian "Tutti contro tutti"
+name german "Frei f r alle"
+name spanish "Duelo a muerte"
+name polish "Tryb dowolny"
+name russian "              "
+name japanese " t   [ E t H [ E I [  "
+name korean "      "
+description english "Straight up Deathmatch.  Every man for himself.  Kill everyone.\n\n__________\nPlayers:4-8\n^8*^3Xbox LIVE Party Chat allowed"
+description french "Match   mort classique. Une r gle : chacun pour soi. N' pargnez personne.\n\n__________\nJoueurs : 4-8"
+description italian "Deathmatch, nudo e crudo. Ognuno per s . Uccidi tutti.\n\n__________\nGiocatori: 4-8"
+description german "Ganz normales Deathmatch. Jeder k mpft hier f r sich allein und gegen jeden.\n\n__________\nSpieler: 4-8"
+description spanish "Duelo cl sico. S lvese quien pueda. Mata a todo el mundo.\n\n__________\nJugadores: 4-8"
+description polish "Deathmatch. Ka dy dzia a na w asn  r k  i pr buje zabi  innych.\n__________\nGracze:4-8"
+description russian "                               .                    :              .\n\n__________\n      : 4-8"
+description japanese " ^         ̃f X } b ` B\n     ȊO ͂  ׂēG B G ͂  ׂĎE   B\n\n__________\n v   C   [   F4 `8"
+unlockxp 0
+maxparty 1
+rule party_minplayers 1
+rule party_maxplayers 8
+rule party_matchedplayercount 4
+rule scr_dm_scorelimit 1500
+rule cg_everyonehearseveryone 1
+
+mp_afghan,ffa,4
+mp_boneyard,ffa,4
+mp_brecourt,ffa,4
+mp_checkpoint,ffa,4
+mp_estate,ffa,4
+mp_favela,ffa,4
+mp_highrise,ffa,4
+mp_invasion,ffa,4
+mp_nightshift,ffa,4
+mp_quarry,ffa,4
+mp_rundown,ffa,4
+mp_rust,ffa,1
+mp_subbase,ffa,4
+mp_terminal,ffa,4
+mp_underpass,ffa,4
+
+playlist 3 // tdm gametype
+name english "Cage Match"
+
+description english "1v1 Deathmatch.\n\n__________\nPlayers:2"
+unlockxp 0
+maxparty 2
+rule party_minplayers 1
+rule party_maxplayers 2
+rule party_matchedplayercount 2
+rule scr_thirdperson 0
+rule scr_dm_scorelimit 1000
+
+mp_boneyard,1v1,4
+mp_rust,1v1,4
+
+playlist 4 //hs_dom gametype
+name english "Domination"
+name french "Domination"
+name italian "Dominio"
+name german "Herrschaft"
+name spanish "Dominio"
+name polish "Dominacja"
+name russian "             "
+name japanese " h ~ l [ V    "
+name korean "    "
+description english "3 flags in the level must be captured.  Your team gets points for having control of a flag.  The more flags your team holds, the more points you gain.\n__________\nPlayers:8-12"
+description french "3 drapeaux doivent  tre captur s dans le niveau. Votre  quipe gagne des points lorsqu'elle contr le un drapeau. Plus votre  quipe contr le de drapeaux, plus vous gagnez de points.\n__________\nJoueurs : 8-12"
+description italian "Lo scopo   prendere possesso delle 3 bandiere presenti nel livello. La tua squadra ottiene un punto per ogni bandiera conquistata. Pi  saranno le bandiere possedute dalla squadra e pi  punti otterrete.\n__________\nGiocatori: 8-12"
+description german "3 Flaggen im Level m ssen erobert werden. Ihr Team punktet f r die Kontrolle einer Flagge. Je mehr Flaggen Ihr Team h lt, desto mehr Punkte bekommt es.\n__________\nSpieler: 8-12"
+description spanish "Hay que tomar 3 banderas en el nivel. Tu equipo recibir  puntos cada vez que controle una bandera. Cuantas m s banderas control is, m s puntos obtendr is.\n__________\nJugadores: 8-12"
+description polish "Trzeba przej   3 flagi na mapie. Dru yna zdobywa punkty za przej cie kontroli nad flag . Im wi cej flag posiada twoja dru ., tym wi cej pkt. zdobywasz.\n__________\nGracze:8-12"
+description russian "                   3      ,                                          .                                        ,                             .\n__________\n      : 8-12"
+description japanese " X e [ W   3 ̃t   b O  D 悷  B\n t   b O   ƂɃ| C   g     邽  \n Ȃ ׂ      D 悷  K v      B\n__________\n v   C   [   F8 `12"
+description korean "3           ȹ   ض .                                 ν              ȴ .               ȹ   Ҽ                     ´ .\n__________\n ÷  ̾ :8-12"
+unlockxp 3600
+maxparty 6
+rule party_minplayers 1
+rule party_maxplayers 12
+rule party_matchedplayercount 4
+
+mp_afghan,dom,1
+mp_boneyard,dom,1
+mp_brecourt,dom,1
+mp_checkpoint,dom,1
+mp_derail,dom,1
+mp_estate,dom,1
+mp_favela,dom,1
+mp_highrise,dom,1
+mp_invasion,dom,1
+mp_nightshift,dom,1
+mp_quarry,dom,1
+mp_rundown,dom,1
+mp_subbase,dom,1
+mp_terminal,dom,1
+mp_underpass,dom,1
+
+playlist 5 // big_tdm and dom gametype
+name english "Ground War^8*^7"
+name french "Guerre de territoire"
+name italian "Battaglia terrestre"
+name german "Bodenangriff"
+name spanish "Guerra terrestre"
+name polish "Wojn  l d."
+name russian "              "
+name japanese " O   E   h E E H ["
+name korean "         "
+description english "Big team games - Team Deathmatch and Domination.\n\n__________\nPlayers:12-18\n^8*^3Xbox LIVE Party Chat allowed"
+description french "Un mode taill  pour le jeu en  quipe avec, au menu, Match   mort par  quipe et Domination.\n\n__________\nJoueurs : 12-18"
+description italian "Modalit  per squadre numerose: Deathmatch a squadre e Dominio.\n\n__________\nGiocatori: 12-18"
+description german "Gro e Teamspiele - Team-Deathmatch und Herrschaft.\n\n__________\nSpieler: 12-18"
+description spanish "Partidas con equipos numerosos: Duelo por equipos y Dominio.\n\n__________\nJugadores: 12-18"
+description polish "Liczne dru yny - DM Dru . i Dominacja\n\n__________\nGracze: 12-18"
+description russian "               '''             ''   ''             ''                            .\n\n__________\n      : 12-18"
+description japanese "  l   ` [       B ` [   f X } b `  \n h ~ l [ V     B\n\n__________\n v   C   [   F12 `18"
+description korean "ū   ü     -          ġ       \n__________\n ÷  ̾ :12-18"
+unlockxp 3600
+maxparty 9
+rule party_minplayers 1
+rule party_maxplayers 18
+rule party_matchedplayercount 4
+rule scr_war_scorelimit 10000
+
+mp_afghan,dom,1
+mp_boneyard,dom,1
+mp_brecourt,dom,1
+mp_checkpoint,dom,1
+mp_derail,dom,1
+mp_estate,dom,1
+mp_favela,dom,1
+mp_highrise,dom,1
+mp_invasion,dom,1
+mp_nightshift,dom,1
+mp_quarry,dom,1
+mp_rundown,dom,1
+mp_subbase,dom,1
+mp_terminal,dom,1
+mp_underpass,dom,1
+mp_afghan,tdm,1
+mp_boneyard,tdm,1
+mp_brecourt,tdm,1
+mp_checkpoint,tdm,1
+mp_derail,tdm,1
+mp_estate,tdm,1
+mp_favela,tdm,1
+mp_highrise,tdm,1
+mp_invasion,tdm,1
+mp_nightshift,tdm,1
+mp_quarry,tdm,1
+mp_rundown,tdm,1
+mp_subbase,tdm,1
+mp_terminal,tdm,1
+mp_underpass,tdm,1
+
+playlist 6 // sab gametype
+name english "Sabotage"
+name french "Sabotage"
+name italian "Sabotaggio"
+name german "Sabotage"
+name spanish "Sabotaje"
+name polish "Sabota "
+name russian "        "
+name japanese " T { ^ [ W  "
+description english "Grab the neutral bomb and plant it on the enemy's bomb site.  First to detonate wins!\n\n__________\nPlayers:8-12"
+description french "R cup rez la bombe neutre et placez-la sur le site ennemi. Le premier   faire exploser la bombe gagne !\n\n__________\nJoueurs : 8-12"
+description italian "Prendi la bomba neutrale e piazzala sulla postazione bomba nemica. Il primo a farla detonare vince!\n\n__________\nGiocatori: 8-12"
+description german "Schnappen Sie sich die neutrale Bombe und platzieren Sie sie auf dem feindlichen Bombenplatz. Das Team, das die Bombe zuerst explodieren l sst, gewinnt.\n\n__________\nSpieler: 8-12"
+description spanish "Coloca la bomba neutral en la zona enemiga.  Gana quien detone primero!\n\n__________\nJugadores: 8-12"
+description polish "We  bomb  i pod   j  w pobli u wrog. celu. Osoba, kt ra pierwsza zdet. bomb , wygrywa\n__________\nGracze:8-12"
+description russian "                                                        .        ,                     ,          !\n\n__________\n      : 8-12"
+description japanese "   e  E   ēG w ̔  j | C   g ɐݒu    B\n ŏ  ɋN         ̏      I\n\n__________\n v   C   [   F8 `12"
+unlockxp 29700
+maxparty 6
+rule party_minplayers 1
+rule party_maxplayers 12
+rule party_matchedplayercount 4
+
+mp_afghan,sab,1
+mp_boneyard,sab,1
+mp_brecourt,sab,1
+mp_checkpoint,sab,1
+mp_derail,sab,1
+mp_estate,sab,1
+mp_favela,sab,1
+mp_highrise,sab,1
+mp_invasion,sab,1
+mp_nightshift,sab,1
+mp_quarry,sab,1
+mp_rundown,sab,1
+mp_subbase,sab,1
+mp_terminal,sab,1
+mp_underpass,sab,1
+
+playlist 7 // hq gametype
+name english "Headquarters Pro"
+name french "Quartier g n ral Pro"
+name italian "QG Pro"
+name german "Hauptquartier Pro"
+name spanish "Cuarteles (Pro)"
+name polish "Sztab Pro"
+name russian "    ,      ."
+name japanese " w b h N H [ ^ [PRO"
+name korean "  ɺ "
+description english "A target HQ is marked and activates in 30 seconds.  Capture it and defend it.  You gain points the longer you hold it.\n__________\nPlayers:8-12"
+description french "Capturez et d fendez le QG cible indiqu  et activ  dans les 30 secondes. Plus vous le tenez, plus vous marquez de points.\n__________\nJoueurs :8-12"
+description italian "Un QG bersaglio viene indicato e attivato in 30 secondi. Catturalo e difendilo. Pi  a lungo lo difendi, pi  punti ottieni.\n__________\nGiocatori: 8-12"
+description german "Ein Hauptquartier wird als Ziel markiert und nach 30 Sekunden aktiviert. Erobern und halten Sie es. Je l nger sie es halten, desto mehr Punkte bekommen Sie.\n__________\nSpieler: 8-12"
+description spanish "Cuarteles marcados y activados en 30 seg. Tomar y defender. Retenlos.\n__________\nJugadores: 8-12"
+description polish "Wybrany sztab aktywuje si  za 30 sek.  Zajmij sztab i bro  go. Im d u ej utrzymasz kontrol , tym wi cej otrzymasz pkt.\n__________\nGracze:8-12"
+description russian "                       ,                                     30                    .                            .                                        .\n__________\n      : 8-12"
+description japanese " ڕW ̎i ߕ  ̓} [ L   O    A30 b ȓ  \n N      B D 悵       Ŗh q    B\n        Ԃ      قǁA     _  l   ł   B\n__________\n v   C   [   F8 `12"
+unlockxp 29700
+maxparty 6
+rule party_minplayers 1
+rule party_maxplayers 12
+rule party_matchedplayercount 4
+
+mp_afghan,hq_pro,1
+mp_boneyard,hq_pro,1
+mp_brecourt,hq_pro,1
+mp_checkpoint,hq_pro,1
+mp_derail,hq_pro,1
+mp_estate,hq_pro,1
+mp_favela,hq_pro,1
+mp_highrise,hq_pro,1
+mp_invasion,hq_pro,1
+mp_nightshift,hq_pro,1
+mp_quarry,hq_pro,1
+mp_rundown,hq_pro,1
+mp_subbase,hq_pro,1
+mp_terminal,hq_pro,1
+mp_underpass,hq_pro,1
+
+playlist 8 // sd gametype
+name english "Search and Destroy"
+name french "Recherche et destruction"
+name italian "Cerca e distruggi"
+name german "Suchen und Zerst ren"
+name spanish "Buscar y destruir"
+name polish "Znajd  i zniszcz"
+name russian "     "
+name japanese " T [ `   f X g   C"
+name korean "         "
+description english "No respawning, defend and destroy the objective.\n\n__________\nPlayers:8-12\nRespawning is OFF"
+description french "Pas de r apparition. Cherchez et d truisez l'objectif.\n\n__________\nJoueurs : 8-12\nLa r apparition est D SACTIV E."
+description italian "Niente rientri, difendi e distruggi l'obiettivo.\n\n__________\nGiocatori: 8-12\nRientri disattivi"
+description german "Kein Wiedereinstieg; verteidigen oder zerst ren Sie das Ziel.\n\n__________\nSpieler: 8-12\nWiedereinstieg ist deaktiviert."
+description spanish "Defiende o destruye el objetivo sin reapariciones.\n\n__________\nJugadores: 8-12\nNo se permiten las reapariciones"
+description polish "Bez odradzania. Bro  i zniszcz cel.\n\n__________\nGracze:8-12\nOdradzanie WY ."
+description russian "                                      .                            .\n\n__________\n      : 8-12\n                      "
+description japanese "     Ȃ  B ڕW ̖h q ܂  ͔j   s   B\n\n__________\n v   C   [   F8 `12\n     F I t"
+description korean "           .   ǥ       ϰ   ı  ض .\n__________\n ÷  ̾ :8-12"
+unlockxp 53100
+maxparty 6
+rule party_minplayers 1
+rule party_maxplayers 12
+rule party_matchedplayercount 4
+
+mp_afghan,sd,1
+mp_boneyard,sd,1
+mp_brecourt,sd,1
+mp_checkpoint,sd,1
+mp_derail,sd,1
+mp_estate,sd,1
+mp_favela,sd,1
+mp_highrise,sd,1
+mp_invasion,sd,1
+mp_nightshift,sd,1
+mp_quarry,sd,1
+mp_rundown,sd,1
+mp_subbase,sd,1
+mp_terminal,sd,1
+mp_underpass,sd,1
+
+playlist 9 // mosh pit playlist
+name english "Mosh Pit"
+description english "Mixed bag of many gamemodes in one playlist.\n__________\nPlayers:8-12"
+unlockxp 53100
+maxparty 6
+rule party_minplayers 1
+rule party_maxplayers 12
+rule party_matchedplayercount 4
+
+mp_afghan,tdm,1
+mp_boneyard,tdm,1
+mp_brecourt,tdm,1
+mp_checkpoint,tdm,1
+mp_derail,tdm,1
+mp_estate,tdm,1
+mp_favela,tdm,1
+mp_highrise,tdm,1
+mp_invasion,tdm,1
+mp_nightshift,tdm,1
+mp_quarry,tdm,1
+mp_rundown,tdm,1
+mp_subbase,tdm,1
+mp_terminal,tdm,1
+mp_underpass,tdm,1
+mp_afghan,dom,1
+mp_boneyard,dom,1
+mp_brecourt,dom,1
+mp_checkpoint,dom,1
+mp_derail,dom,1
+mp_estate,dom,1
+mp_favela,dom,1
+mp_highrise,dom,1
+mp_invasion,dom,1
+mp_nightshift,dom,1
+mp_quarry,dom,1
+mp_rundown,dom,1
+mp_subbase,dom,1
+mp_terminal,dom,1
+mp_underpass,dom,1
+mp_afghan,hq_pro,1
+mp_boneyard,hq_pro,1
+mp_brecourt,hq_pro,1
+mp_checkpoint,hq_pro,1
+mp_derail,hq_pro,1
+mp_estate,hq_pro,1
+mp_favela,hq_pro,1
+mp_highrise,hq_pro,1
+mp_invasion,hq_pro,1
+mp_nightshift,hq_pro,1
+mp_quarry,hq_pro,1
+mp_rundown,hq_pro,1
+mp_subbase,hq_pro,1
+mp_terminal,hq_pro,1
+mp_underpass,hq_pro,1
+mp_afghan,sd,1
+mp_boneyard,sd,1
+mp_brecourt,sd,1
+mp_checkpoint,sd,1
+mp_derail,sd,1
+mp_estate,sd,1
+mp_favela,sd,1
+mp_highrise,sd,1
+mp_invasion,sd,1
+mp_nightshift,sd,1
+mp_quarry,sd,1
+mp_rundown,sd,1
+mp_subbase,sd,1
+mp_terminal,sd,1
+mp_underpass,sd,1
+mp_afghan,ctf,1
+mp_boneyard,ctf,1
+mp_brecourt,ctf,1
+mp_checkpoint,ctf,1
+mp_derail,ctf,1
+mp_estate,ctf,1
+mp_favela,ctf,1
+mp_highrise,ctf,1
+mp_invasion,ctf,1
+mp_nightshift,ctf,1
+mp_quarry,ctf,1
+mp_rundown,ctf,1
+mp_subbase,ctf,1
+mp_terminal,ctf,1
+mp_underpass,ctf,1
+mp_afghan,dd,1
+mp_boneyard,dd,1
+mp_checkpoint,dd,1
+mp_derail,dd,1
+mp_estate,dd,1
+mp_favela,dd,1
+mp_highrise,dd,1
+mp_invasion,dd,1
+mp_nightshift,dd,1
+mp_quarry,dd,1
+mp_rundown,dd,1
+mp_subbase,dd,1
+mp_terminal,dd,1
+mp_underpass,dd,1
+mp_afghan,sab,1
+mp_boneyard,sab,1
+mp_brecourt,sab,1
+mp_checkpoint,sab,1
+mp_derail,sab,1
+mp_estate,sab,1
+mp_favela,sab,1
+mp_highrise,sab,1
+mp_invasion,sab,1
+mp_nightshift,sab,1
+mp_quarry,sab,1
+mp_rundown,sab,1
+mp_subbase,sab,1
+mp_terminal,sab,1
+mp_underpass,sab,1
+
+playlist 10 // no killstreaks playlist
+name english "Barebones Pro^8*^7"
+name french "Essentiel Pro."
+name italian "Essenziale Pro"
+name german "Abgespeckt Pro"
+name spanish "Osario (Pro)"
+name polish "Barebones Pro"
+name russian "      ,      "
+name japanese " x A { [   F v "
+description english "Play Team Deathmatch and Free-for-all. All Killstreak rewards are disabled.\n\n__________\nPlayers:4-8\n^8*^3Xbox LIVE Party Chat allowed"
+description french "Match   mort par  quipe et M l e g n rale. Bonus de s ries d' liminations d sactiv s.\n\n__________\nJoueurs : 4-8"
+description italian "Deathmatch a squadre e Tutti contro tutti. Tutte le ricompense uccisioni disabilitate.\n\n__________\nGiocatori: 4-8"
+description german "Spielen Sie Team-Deathmatch und Frei f r alle. Alle Abschussserienbelohnungen sind deaktiviert.\n\n__________\nSpieler: 4-8"
+description spanish "Juega a Duelo por equipos y Duelo a muerte. Las recompensas por racha de bajas est n desactivadas.\n\n__________\nJugadores: 4-8"
+description polish "Graj w gr  dowoln  lub dru ynowy DM. Wszystkie premie za seri  zabi  s  wy  czone\n\n__________\nGraczy:4-8"
+description russian "               '             '   '              '.                                    .\n\n__________\n      : 4-8"
+description japanese " t   [ E t H [ E I [   A ` [   f X } b `\n  L   X g   [ N  V Ȃ  Ńv   C    B\n\n__________\n v   C   [   F4 `8"
+unlockxp 85500
+maxparty 6
+rule party_minplayers 1
+rule party_maxplayers 8
+rule party_matchedplayercount 4
+rule scr_game_hardpoints 0
+
+mp_afghan,tc_tdm,4
+mp_boneyard,tc_tdm,4
+mp_brecourt,tc_tdm,4
+mp_checkpoint,tc_tdm,4
+mp_derail,tc_tdm,4
+mp_estate,tc_tdm,4
+mp_favela,tc_tdm,4
+mp_highrise,tc_tdm,4
+mp_invasion,tc_tdm,4
+mp_nightshift,tc_tdm,4
+mp_quarry,tc_tdm,4
+mp_rundown,tc_tdm,4
+mp_rust,tc_tdm,1
+mp_subbase,tc_tdm,4
+mp_terminal,tc_tdm,4
+mp_underpass,tc_tdm,4
+mp_afghan,ffa,4
+mp_boneyard,ffa,4
+mp_brecourt,ffa,4
+mp_checkpoint,ffa,4
+mp_estate,ffa,4
+mp_favela,ffa,4
+mp_highrise,ffa,4
+mp_invasion,ffa,4
+mp_nightshift,ffa,4
+mp_quarry,ffa,4
+mp_rundown,ffa,4
+mp_rust,ffa,1
+mp_subbase,ffa,4
+mp_terminal,ffa,4
+mp_underpass,ffa,4
+
+playlist 11 // no killstreaks playlist part 2
+name english "Objective Barebones Pro^8*^7"
+name french "Objectif Essentiel Pro."
+name italian "Obiettivo Essenziale Pro"
+name german "Abgespeckt Pro - Ziele"
+name spanish "Objetivo Osario (Pro)"
+name polish "Barebones Pro z zadaniami"
+name russian "                ,      "
+name japanese " I u W F N e B u E x A { [   F v  "
+description english "Play Domination, Demolition, HQ Pro, and Capture the Flag. All Killstreak rewards are disabled.\n__________\nPlayers:4-8\n^8*^3Xbox LIVE Party Chat allowed"
+description french "Domination, D molition, QG Pro et Capture du drapeau. Bonus de s ries d' liminations d sactiv s.\n__________\nJoueurs : 8-12"
+description italian "Dominio, Demolizione, QG Pro e Cattura la bandiera. Tutte le ricompense uccisioni disabilitate.\n__________\nGiocatori: 8-12"
+description german "Spielen Sie Herrschaft, Sprengkommando, HQ Pro und Capture the Flag. Alle Abschussserienbelohnungen sind deaktiviert.\n\n__________\nSpieler: 8-12"
+description spanish "Juega a Dominio, Demolici n, Cuarteles (Pro) y Tomar la bandera. Las recompensas por racha de bajas est n desactivadas.\n__________\nJugadores: 8-12"
+description polish "Dominacja, Wysadzanie, Sztab Pro, Zdobywanie flagi. Premie za seri  zabi  s  wy  czone.\n__________\nGraczy:8-12"
+description russian "               '             ', '          ', '    ,      '   '            '.                                    .\n__________\n      : 8-12"
+description japanese " h ~ l [ V     A w b h N H [ ^ [ F v   A\n f     b V     A L   v `   [ E U E t   b O\n  L   X g   [ N  V Ȃ  Ńv   C    B\n__________\n v   C   [   F8 `12"
+unlockxp 85500
+maxparty 6
+rule party_minplayers 1
+rule party_maxplayers 8
+rule party_matchedplayercount 4
+rule scr_game_hardpoints 0
+
+mp_afghan,dom,1
+mp_boneyard,dom,1
+mp_brecourt,dom,1
+mp_checkpoint,dom,1
+mp_derail,dom,1
+mp_estate,dom,1
+mp_favela,dom,1
+mp_highrise,dom,1
+mp_invasion,dom,1
+mp_nightshift,dom,1
+mp_quarry,dom,1
+mp_rundown,dom,1
+mp_subbase,dom,1
+mp_terminal,dom,1
+mp_underpass,dom,1
+mp_afghan,hq_pro,1
+mp_boneyard,hq_pro,1
+mp_brecourt,hq_pro,1
+mp_checkpoint,hq_pro,1
+mp_derail,hq_pro,1
+mp_estate,hq_pro,1
+mp_favela,hq_pro,1
+mp_highrise,hq_pro,1
+mp_invasion,hq_pro,1
+mp_nightshift,hq_pro,1
+mp_quarry,hq_pro,1
+mp_rundown,hq_pro,1
+mp_subbase,hq_pro,1
+mp_terminal,hq_pro,1
+mp_underpass,hq_pro,1
+mp_afghan,ctf,1
+mp_boneyard,ctf,1
+mp_brecourt,ctf,1
+mp_checkpoint,ctf,1
+mp_derail,ctf,1
+mp_estate,ctf,1
+mp_favela,ctf,1
+mp_highrise,ctf,1
+mp_invasion,ctf,1
+mp_nightshift,ctf,1
+mp_quarry,ctf,1
+mp_rundown,ctf,1
+mp_subbase,ctf,1
+mp_terminal,ctf,1
+mp_underpass,ctf,1
+mp_afghan,dd,1
+mp_boneyard,dd,1
+mp_checkpoint,dd,1
+mp_derail,dd,1
+mp_estate,dd,1
+mp_favela,dd,1
+mp_highrise,dd,1
+mp_invasion,dd,1
+mp_nightshift,dd,1
+mp_quarry,dd,1
+mp_rundown,dd,1
+mp_subbase,dd,1
+mp_terminal,dd,1
+mp_underpass,dd,1
+
+playlist 12 // tc playlist
+name english "Team Tactical^8*^7"
+name french " quipe tactique"
+name italian "Modalit  Tattica"
+name german "Taktik-Teamspiele"
+name spanish "T ctico por equipos"
+name polish "Dru . taktyczny"
+name russian "                 "
+name japanese " ` [   ^ N e B J  "
+description english "Small team based games with Team Deathmatch, Domination, Capture the Flag, Demolition, and Search and Destroy.\n\n__________\nPlayers:6-8\n^8*^3Xbox LIVE Party Chat allowed"
+description french "Parties pour petites  quipes avec Match   mort par  quipe, Domination, Capture du drapeau, D molition et Recherche et destruction.\n\n__________\nJoueurs : 6-8"
+description italian "Partite per squadre ridotte con con Deathmatch a squadre, Dominazione, Cattura la bandiera, Demolizione e Cerca e distruggi.\n\n__________\nGiocatori: 6-8"
+description german "Team-Deathmatch, Herrschaft, Capture the Flag, Sprengkommando und Suchen und Zerst ren als kleine Teamspiele.\n\n__________\nSpieler: 6-8"
+description spanish "Partidas por equipos peque os con Duelo por equipos, Dominio, Tomar la bandera, Demolici n y Buscar y destruir.\n\n__________\nJugadores: 6-8"
+description polish "Dla ma ych dru yn DM Dru ynowy, Dominacja, Zdob d  flag  i Wysadzanie z, Znajd  i Zniszcz\n\n__________\nGracze:6-8"
+description russian "                                    '             ', '             ', '            ', '           '   '     '.\n\n__________\n      : 6-8"
+description japanese "   l   ɂ  ` [   f X } b ` A\n h ~ l [ V     A L   v `   [ E U E t   b O\n T [ `& f X g   C    уf     b V     B\n\n__________\n v   C   [   F6 `8"
+unlockxp 126900
+maxparty 4
+rule party_minplayers 1
+rule party_maxplayers 8
+rule party_matchedplayercount 4
+
+mp_afghan,tc_tdm,1
+mp_boneyard,tc_tdm,1
+mp_estate,tc_tdm,1
+mp_favela,tc_tdm,1
+mp_highrise,tc_tdm,1
+mp_rust,tc_tdm,1
+mp_subbase,tc_tdm,1
+mp_terminal,tc_tdm,1
+mp_afghan,ctf,1
+mp_boneyard,ctf,1
+mp_estate,ctf,1
+mp_favela,ctf,1
+mp_highrise,ctf,1
+mp_rust,ctf,1
+mp_subbase,ctf,1
+mp_terminal,ctf,1
+mp_afghan,dom,1
+mp_boneyard,dom,1
+mp_estate,dom,1
+mp_favela,dom,1
+mp_highrise,dom,1
+mp_rust,dom,1
+mp_subbase,dom,1
+mp_terminal,dom,1
+mp_afghan,dd,1
+mp_boneyard,dd,1
+mp_estate,dd,1
+mp_favela,dd,1
+mp_highrise,dd,1
+mp_rust,dd,1
+mp_subbase,dd,1
+mp_terminal,dd,1
+mp_afghan,sd,1
+mp_boneyard,sd,1
+mp_brecourt,sd,1
+mp_checkpoint,sd,1
+mp_derail,sd,1
+mp_estate,sd,1
+mp_favela,sd,1
+mp_highrise,sd,1
+mp_invasion,sd,1
+mp_nightshift,sd,1
+mp_quarry,sd,1
+mp_rundown,sd,1
+mp_subbase,sd,1
+mp_terminal,sd,1
+mp_underpass,sd,1
+
+playlist 13 // 3p tc playlist
+name english "3rd Person Team Tactical^8*^7"
+name french "3e personne par  quipe tactique"
+name italian "Modalit  Tattica a squadre 3  P."
+name german "Externe Ansicht - Taktik-Teamspiele"
+name spanish "T ctico por equipos en TP"
+name polish "Dru . takt. z persp. 3. os"
+name russian "                 ,    3-       "
+name japanese "TPS ` [   ^ N e B J  "
+description english "Third person perspective with Team Deathmatch, Domination, Capture the Flag, and Demolition.\n\n__________\nPlayers:6-8\n^8*^3Xbox LIVE Party Chat allowed"
+description french "Match   mort par  quipe, Domination, Capture du drapeau et D molition avec vue   la 3e personne.\n\n__________\nJoueurs : 6-8"
+description italian "Modalit  in terza persona con Deathmatch a squadre, Dominio, Cattura la bandiera e Demolizione.\n\n__________\nGiocatori: 6-8"
+description german "Team-Deathmatch, Herrschaft, Capture the Flag und Sprengkommando in der externen Ansicht.\n\n__________\nSpieler: 6-8"
+description spanish "Duelo por equipos, Dominio, Tomar la bandera y Demolici n en perspectiva de tercera persona.\n\n__________\nJugadores: 6-8"
+description polish "Tryby DM Dru ynowy, Dominacja, Zdob d  flag  i Wysadzanie z perspektywy 3. osoby.\n__________\nGracze:6-8"
+description russian "'             '', ''             '', ''            ''   ''           ''                         .\n\n__________\n      : 6-8"
+description japanese "3 l ̎  _ ̃` [   f X } b ` A\n h ~ l [ V     A L   v `   [ E U E t   b O\n    уf     b V     B\n\n__________\n v   C   [   F6 `8"
+unlockxp 126900
+maxparty 4
+rule party_minplayers 1
+rule party_maxplayers 8
+rule party_matchedplayercount 4
+set camera_thirdPersonFovScale 0.9
+set camera_thirdPersonOffset -120 0 14
+set camera_thirdPersonOffsetAds -60 -20 4
+set camera_thirdPersonOffsetTurretAds -80 0 14
+set camera_thirdPersonAdsTransScale 2
+
+mp_afghan,3p_tdm,1
+mp_boneyard,3p_tdm,1
+mp_estate,3p_tdm,1
+mp_favela,3p_tdm,1
+mp_highrise,3p_tdm,1
+mp_rust,3p_tdm,1
+mp_subbase,3p_tdm,1
+mp_terminal,3p_tdm,1
+mp_afghan,3p_ctf,1
+mp_boneyard,3p_ctf,1
+mp_estate,3p_ctf,1
+mp_favela,3p_ctf,1
+mp_highrise,3p_ctf,1
+mp_rust,3p_ctf,1
+mp_subbase,3p_ctf,1
+mp_terminal,3p_ctf,1
+mp_afghan,3p_dom,1
+mp_boneyard,3p_dom,1
+mp_estate,3p_dom,1
+mp_favela,3p_dom,1
+mp_highrise,3p_dom,1
+mp_rust,3p_dom,1
+mp_subbase,3p_dom,1
+mp_terminal,3p_dom,1
+mp_afghan,3p_dd,1
+mp_boneyard,3p_dd,1
+mp_estate,3p_dd,1
+mp_favela,3p_dd,1
+mp_highrise,3p_dd,1
+mp_rust,3p_dd,1
+mp_subbase,3p_dd,1
+mp_terminal,3p_dd,1
+
+playlist 14 // hc_tdm gametype
+name english "Hardcore Team Deathmatch"
+name french "Match   mort par  quipe Hardcore."
+name italian "Deathmatch a squadre - veterano"
+name german "Hardcore-Team-Deathmatch"
+name spanish "Duelo por equipos extremo"
+name polish "DM dru . hardcore"
+name russian "   .    ,      .          "
+name japanese " n [ h R A F ` [   f X } b `"
+name korean " ϵ  ھ           ġ"
+description english "Team Deathmatch with:\n\n\n__________\nPlayers:8-12\nLimited HUD\nExtra bullet damage\nFriendly Fire is ON"
+description french "Match   mort en  quipe.\n\n\n__________\nJoueurs : 8-12\nATH limit .\nD g ts suppl mentaires des balles.\nTir alli  activ ."
+description italian "Deathmatch a squadre con:\n\n\n__________\nGiocatori: 8-12\nInterfaccia ridotta\nDanno proiettili aumentato\nFuoco amico ATTIVO"
+description german "Team-Deathmatch mit:\n\n\n__________\nSpieler: 8-12\nEingeschr nktes HUD\nErh hter Patronenschaden\nTeambeschuss ist aktiviert."
+description spanish "Duelo por equipos con:\n\n\n__________\nJugadores: 8-12\nHUD limitado\nBalas m s da inas\nFuego amigo activado"
+description polish "DM Dru ynowy:\n\n\n__________\nGracze:8-12\nOgraniczony HUD\nZwi kszone obra enia\nOgie  sojuszniczy W ."
+description russian "'             ''                     .\n\n\n__________\n      : 8-12\n                                 \n                        \n          "
+description japanese "HUD     A e ۃ_   [ W   A   m         \n ` [   f X } b ` B\n\n\n__________\n v   C   [   F8 `12\n     ւ̌ ˁF I  "
+description korean "         ġ: HUD     .  Ѿ   ջ      .  Ʊ         .\n__________\n ÷  ̾ :8-12"
+unlockxp 126900
+maxparty 6
+rule party_minplayers 1
+rule party_maxplayers 12
+rule party_matchedplayercount 4
+rule party_readypercentrequired 0
+
+mp_afghan,hc_tdm,1
+mp_boneyard,hc_tdm,1
+mp_brecourt,hc_tdm,1
+mp_checkpoint,hc_tdm,1
+mp_derail,hc_tdm,1
+mp_estate,hc_tdm,1
+mp_favela,hc_tdm,1
+mp_highrise,hc_tdm,1
+mp_invasion,hc_tdm,1
+mp_nightshift,hc_tdm,1
+mp_quarry,hc_tdm,1
+mp_rundown,hc_tdm,1
+mp_subbase,hc_tdm,1
+mp_terminal,hc_tdm,1
+mp_underpass,hc_tdm,1
+
+playlist 15 // ric_sd gametype
+name english "Hardcore Ricochet: SD"
+name french "Ricochet Hardcore : R&D"
+name italian "Ricochet veterano: Cerca e distruggi"
+name german "Hardcore-Querschl ger: S&Z"
+name spanish "Extremo con rebote: BD"
+name polish "Rykoszet hardcore: ZZ"
+name russian "     ,     .         ,       "
+name japanese "HC/   e F T [ `& f X g   C"
+name korean " ϵ  ھ            "
+description english "Hardcore Search and Destroy with ricochet friendly fire.\n\n__________\nPlayers:8-12\nLimited HUD\nExtra bullet damage\nFriendly fire is directed back at the shooter"
+description french "Recherche et destruction Hardcore avec tir alli  renvoy .\n\n__________\nJoueurs : 8-12\nATH limit .\nD g ts suppl mentaires des balles.\nTir alli  renvoy    l'auteur."
+description italian "Cerca e distruggi veterano con fuoco amico in modalit  Ricochet.\n\n__________\nGiocatori: 8-12\nInterfaccia ridotta\nDanno proiettili aumentato\nIl fuoco amico viene rispedito al mittente"
+description german "Hardcore-Suchen und Zerst ren mit Querschl ger-Teambeschuss.\n\n__________\nSpieler: 8-12\nEingeschr nktes HUD\nErh hter Patronenschaden\nTeambeschuss wird auf den Sch tzen zur ckgelenkt"
+description spanish "Buscar y destruir extremo con fuego amigo con rebote.\n\n__________\nJugadores: 8-12\nHUD limitado\nBalas m s da inas\nEl fuego amigo vuelve al tirador"
+description polish "Znajd  i zniszcz hc z rykosz. ostrza em przyj.\n__________\nGracze:8-12\nOgranicz. HUD\nDod. obra enia od pocisk w\nStrza  do sojusz. jest odbijany w kierunku atak"
+description russian "              ''     ''                                                .\n\n__________\n      : 8-12\n                                 \n                        \n                            ,              "
+description japanese " n [ h R A A   e   [   ̃T [ `   f X g   C B\nHUD     A e ۃ_   [ W   A   m        B\n\n__________\n v   C   [   F8 `12\n     ւ̌ ˂͌      ҂ɒ  ˕Ԃ B"
+unlockxp 126900
+maxparty 6
+rule party_minplayers 1
+rule party_maxplayers 12
+rule party_matchedplayercount 4
+
+mp_afghan,ric_sd,1
+mp_boneyard,ric_sd,1
+mp_brecourt,ric_sd,1
+mp_checkpoint,ric_sd,1
+mp_derail,ric_sd,1
+mp_estate,ric_sd,1
+mp_favela,ric_sd,1
+mp_highrise,ric_sd,1
+mp_invasion,ric_sd,1
+mp_nightshift,ric_sd,1
+mp_quarry,ric_sd,1
+mp_rundown,ric_sd,1
+mp_subbase,ric_sd,1
+mp_terminal,ric_sd,1
+mp_underpass,ric_sd,1
+
+playlist 16 // hq gametype
+name english "Hardcore Ricochet: HQ Pro"
+name french "Ricochet Hardcore: QG Pro"
+name italian "Ricochet veterano: QG Pro"
+name german "Hardcore-Querschl ger: HQ Pro"
+name spanish "Extremo con rebote: Cuarteles (Pro)"
+name polish "Hardcore Rykoszet: Sztab Pro"
+name russian "    ,       (       ,      .          )"
+name japanese "HC/   e F w b h N H [ ^ [PRO"
+description english "Headquarters Pro with Hardcore Ricochet rules.\n__________\nPlayers:8-12\nLimited HUD\nExtra bullet damage\nFriendly Fire is directed back at the shooter"
+description french "Quartier g n ral Pro avec les r gles Ricochet Hardcore.\n\n__________\nJoueurs :8-12\nATH limit .\nD g ts suppl mentaires des balles.\nTir alli  renvoy    l'auteur."
+description italian "QG Pro con le regole della modalit  Ricochet veterano.\n__________\nGiocatori: 8-12\nInterfaccia ridotta\nDanno proiettili aumentato\nIl fuoco amico viene rispedito al mittente"
+description german "Hauptquartier Pro mit Hardcore-Querschl ger-Regeln.\n__________\nSpieler: 8-12\nEingeschr nktes HUD\nErh hter Patronenschaden\nTeambeschuss wird auf den Sch tzen zur ckgelenkt "
+description spanish "Cuarteles (Pro) con reglas de Extremo con rebote.\n__________\nJugadores: 8-12\nHUD limitado\nBalas m s da inas\nEl fuego amigo vuelve al tirador"
+description polish "Sztab Pro + Hardcore rykoszet\n__________\nGracze:8-12\nOgraniczony HUD\nWi ksze obra enia\nOgie  sojuszniczy 'wraca' do strzelca"
+description russian "      ''    ,      ''             ''       ''   ''                    ''.\n__________\n      :8-12\n                                 \n                        \n                                       ,              "
+description japanese " n [ h R A ̃w b h N E H [ ^ [PRO B\nHUD     A e ۃ_   [ W   B\n__________\n v   C   [   F8 `12\n     ւ̌ ˂͎    ɒ  ˕Ԃ B"
+unlockxp 126900
+maxparty 6
+rule party_minplayers 1
+rule party_maxplayers 12
+rule party_matchedplayercount 4
+
+mp_afghan,ric_hq_pro,4
+mp_boneyard,ric_hq_pro,4
+mp_brecourt,ric_hq_pro,4
+mp_checkpoint,ric_hq_pro,4
+mp_derail,ric_hq_pro,4
+mp_estate,ric_hq_pro,4
+mp_favela,ric_hq_pro,4
+mp_quarry,ric_hq_pro,4
+mp_rundown,ric_hq_pro,4
+mp_subbase,ric_hq_pro,4
+mp_underpass,ric_hq_pro,4
+mp_rust,ric_hq_pro,4
+mp_invasion,ric_hq_pro,4
+mp_highrise,ric_hq_pro,4
+mp_nightshift,ric_hq_pro,4
+mp_terminal,ric_hq_pro,4
+
+playlist 17 // hc mosh pit playlist
+name english "Hardcore Mosh Pit"
+name french "Fosse Hardcore"
+name italian "Mosh Pit veterano"
+name german "Hardcore-Mosh-Pit"
+name spanish "Foso extremo"
+name polish "Kocio  Hardcore"
+name russian "    ,                     "
+name japanese " n [ h R A F ~ b N X"
+description english "Mixed bag of many hardcore game modes in one playlist.\n__________\nPlayers:8-12"
+description french "M lange de nombreux modes Hardcore en une seule s lection.\n__________\nJoueurs : 8-12"
+description italian "Un mix di diverse modalit  di gioco da veterano in un solo elenco.\n__________\nGiocatori: 8-12"
+description german "Verschiedene Hardcore-Spielmodi in einer Liste.\n__________\nSpieler: 8-12"
+description spanish "Diversos modos de juego extremo en una sola lista de partidas.\n__________\nJugadores: 8-12"
+description polish "Ro ne typy gry hardcore na jednej li cie.\n__________\nGracze 8-12"
+description russian "                                                                     .\n\n__________\n      : 8-12"
+description japanese " e  n [ h R A   [ h      _   ŁB\n__________\n v   C   [   F8 `12"
+unlockxp 126900
+maxparty 6
+rule party_minplayers 1
+rule party_maxplayers 12
+rule party_matchedplayercount 4
+
+mp_afghan,hc_tdm,1
+mp_boneyard,hc_tdm,1
+mp_brecourt,hc_tdm,1
+mp_checkpoint,hc_tdm,1
+mp_derail,hc_tdm,1
+mp_estate,hc_tdm,1
+mp_favela,hc_tdm,1
+mp_highrise,hc_tdm,1
+mp_invasion,hc_tdm,1
+mp_nightshift,hc_tdm,1
+mp_quarry,hc_tdm,1
+mp_rundown,hc_tdm,1
+mp_subbase,hc_tdm,1
+mp_terminal,hc_tdm,1
+mp_underpass,hc_tdm,1
+mp_afghan,hc_dom,1
+mp_boneyard,hc_dom,1
+mp_brecourt,hc_dom,1
+mp_checkpoint,hc_dom,1
+mp_derail,hc_dom,1
+mp_estate,hc_dom,1
+mp_favela,hc_dom,1
+mp_highrise,hc_dom,1
+mp_invasion,hc_dom,1
+mp_nightshift,hc_dom,1
+mp_quarry,hc_dom,1
+mp_rundown,hc_dom,1
+mp_subbase,hc_dom,1
+mp_terminal,hc_dom,1
+mp_underpass,hc_dom,1
+mp_afghan,ric_hq_pro,1
+mp_boneyard,ric_hq_pro,1
+mp_brecourt,ric_hq_pro,1
+mp_checkpoint,ric_hq_pro,1
+mp_derail,ric_hq_pro,1
+mp_estate,ric_hq_pro,1
+mp_favela,ric_hq_pro,1
+mp_highrise,ric_hq_pro,1
+mp_invasion,ric_hq_pro,1
+mp_nightshift,ric_hq_pro,1
+mp_quarry,ric_hq_pro,1
+mp_rundown,ric_hq_pro,1
+mp_subbase,ric_hq_pro,1
+mp_terminal,ric_hq_pro,1
+mp_underpass,ric_hq_pro,1
+mp_afghan,hc_sd,1
+mp_boneyard,hc_sd,1
+mp_brecourt,hc_sd,1
+mp_checkpoint,hc_sd,1
+mp_derail,hc_sd,1
+mp_estate,hc_sd,1
+mp_favela,hc_sd,1
+mp_highrise,hc_sd,1
+mp_invasion,hc_sd,1
+mp_nightshift,hc_sd,1
+mp_quarry,hc_sd,1
+mp_rundown,hc_sd,1
+mp_subbase,hc_sd,1
+mp_terminal,hc_sd,1
+mp_underpass,hc_sd,1
+mp_afghan,hc_ctf,1
+mp_boneyard,hc_ctf,1
+mp_brecourt,hc_ctf,1
+mp_checkpoint,hc_ctf,1
+mp_derail,hc_ctf,1
+mp_estate,hc_ctf,1
+mp_favela,hc_ctf,1
+mp_highrise,hc_ctf,1
+mp_invasion,hc_ctf,1
+mp_nightshift,hc_ctf,1
+mp_quarry,hc_ctf,1
+mp_rundown,hc_ctf,1
+mp_subbase,hc_ctf,1
+mp_terminal,hc_ctf,1
+mp_underpass,hc_ctf,1
+mp_afghan,hc_dd,1
+mp_boneyard,hc_dd,1
+mp_checkpoint,hc_dd,1
+mp_derail,hc_dd,1
+mp_estate,hc_dd,1
+mp_favela,hc_dd,1
+mp_highrise,hc_dd,1
+mp_invasion,hc_dd,1
+mp_nightshift,hc_dd,1
+mp_quarry,hc_dd,1
+mp_rundown,hc_dd,1
+mp_subbase,hc_dd,1
+mp_terminal,hc_dd,1
+mp_underpass,hc_dd,1
+mp_afghan,hc_sab,1
+mp_boneyard,hc_sab,1
+mp_brecourt,hc_sab,1
+mp_checkpoint,hc_sab,1
+mp_derail,hc_sab,1
+mp_estate,hc_sab,1
+mp_favela,hc_sab,1
+mp_highrise,hc_sab,1
+mp_invasion,hc_sab,1
+mp_nightshift,hc_sab,1
+mp_quarry,hc_sab,1
+mp_rundown,hc_sab,1
+mp_subbase,hc_sab,1
+mp_terminal,hc_sab,1
+mp_underpass,hc_sab,1

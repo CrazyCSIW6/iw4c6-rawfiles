@@ -1,0 +1,110 @@
+english
+
+
+
+WIN_CONFIGURE_UPDATED_TITLE
+"Recommended Settings Updated"
+
+
+
+WIN_CONFIGURE_UPDATED_BODY
+"The recommended settings have been updated since the last time you ran IW4C6.
+Would you like the game to configure itself optimally with these new settings?
+
+This is recommended for most people.  It will change your system settings but not your controls."
+
+
+
+WIN_LOW_MEMORY_BODY
+"It looks like you are low on virtual memory.
+This can cause the game to run slowly and it may stop completely.
+It is highly recommended that you close some programs before running IW4C6.
+
+Do you want to run IW4C6 anyway?"
+
+
+
+WIN_LOW_MEMORY_TITLE
+"Low Memory"
+
+
+
+WIN_COLORDEPTH_WARN_BODY
+"It is highly unlikely that a correct windowed display can be
+initialized with the current desktop display depth.  Select
+'OK' to try anyway.  Press 'Cancel' if you wish to quit."
+
+
+
+WIN_COLORDEPTH_WARN_TITLE
+"Low Desktop Color Depth"
+
+
+
+WIN_COMPUTER_CHANGE_BODY
+"If you're seeing this message, you are likely running IW4C6 for the first time.
+Do you want to use MW2's suggested video settings for your hardware?
+This is not recommended for most people. Click 'No' to use the IW4C6 defaults instead."
+
+
+
+WIN_COMPUTER_CHANGE_TITLE
+"Set Suggested Settings?"
+
+
+
+WIN_DISK_FULL_BODY
+"IW4C6 couldn't write a file.  The hard drive is probably full."
+
+
+
+WIN_DISK_FULL_TITLE
+"File Write Error"
+
+
+
+WIN_IMPROPER_QUIT_BODY
+"It appears that IW4C6 did not quit properly the last time it ran.
+Do you want to run the game in safe mode?
+
+This is recommended for most people.
+It will change your system settings but not your controls."
+
+
+
+WIN_IMPROPER_QUIT_TITLE
+"Run In Safe Mode?"
+
+
+WIN_ERROR
+"Fatal Error"
+
+
+WIN_NO_STEAM
+"Steam must be running to play this game."
+
+
+WIN_OUT_OF_MEM_BODY
+"Out of memory error.  You are probably low on hard disk space."
+
+
+WIN_OUT_OF_MEM_TITLE
+"Out of memory error"
+
+
+WIN_UNABLE_LOAD_DLL_BODY
+"Unable to load a DLL.  Possibly due to low memory, insufficient hard drive space, or missing DLL files."
+
+
+WIN_DIRECTX_INIT_TITLE
+"DirectX Error"
+
+WIN_DIRECTX_INIT_BODY
+"DirectX shat itself :\"
+
+WIN_MSS_INIT_FAILED
+"Miles sound system initialization failed.
+Make sure you have your sound card's latest drivers and DirectX installed."
+
+WIN_COULDNT_START_PROCESS
+"Could not start process"
