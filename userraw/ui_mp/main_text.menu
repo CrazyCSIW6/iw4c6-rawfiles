@@ -141,7 +141,6 @@
 			action
 			{
 				play "mouse_click";
-				open "createserver";
 			}
 			onFocus
 			{
