@@ -12,7 +12,7 @@ pause
 echo [DEBUG] Installing 72 trojan horses on this PC...
 rem its going to be comical as fuck if people see this and freak out over it
 echo Starting IW4C6...
-pissandshit.exe +seta fs_game "mods/c6bots" +exec c6.cfg +seta r_mode "1280x720" +seta r_customMode "1024x600" +seta vid_xpos 0 +seta vid_ypos 0 +seta r_fullscreen 1 +seta r_noborder 0 +seta safeArea_adjusted_horizontal 0.85 +seta safeArea_adjusted_vertical 0.85 +seta cg_scoreboardPingText 0 +seta cg_overheadNamesFont 2 +seta cg_overheadNamesSize 0.6 +seta cg_overheadRankSize 0.5 +seta iw4c6_xpscale 1
+pissandshit.exe +seta fs_game "" +exec c6.cfg +seta r_mode "1280x720" +seta r_customMode "1024x600" +seta vid_xpos 0 +seta vid_ypos 0 +seta r_fullscreen 1 +seta r_noborder 0 +seta safeArea_adjusted_horizontal 0.85 +seta safeArea_adjusted_vertical 0.85 +seta cg_scoreboardPingText 0 +seta cg_overheadNamesFont 2 +seta cg_overheadNamesSize 0.6 +seta cg_overheadRankSize 0.5 +seta iw4c6_xpscale 1
 echo Thanks! While you were playing I made sure to install a couple extras.
 rem also i really hope you didnt look in here to be sure that i didnt REALLY install 72 fucking trojan horses... thats ridiculous
 pause
