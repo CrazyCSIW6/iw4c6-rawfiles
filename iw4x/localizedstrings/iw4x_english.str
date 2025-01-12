@@ -1,4 +1,4 @@
-VERSION				"1"
+VERSION				"2"
 FILENOTES			"Official IW4x localized strings"
 
 REFERENCE			PLATFORM_DYK_IW4_MSG1
@@ -120,9 +120,6 @@ LANG_ENGLISH			"Killstreak Rewards attained from airdrop crates do not count tow
 
 REFERENCE			PLATFORM_DYK_IW4_MSG39
 LANG_ENGLISH			"Akimbo weapons give you more firepower but restrict your ability to aim down the sight."
-
-REFERENCE			NETWORK_STRICT
-LANG_ENGLISH		"^1Strict"
 
 REFERENCE			PLATFORM_UI_SELECTBUTTON
 LANG_ENGLISH		"[{+gostand}]"
@@ -1186,21 +1183,6 @@ LANG_ENGLISH		"Watch your six!"
 
 REFERENCE			QUICKMESSAGE_COME_ON
 LANG_ENGLISH		"Come on."
-
-REFERENCE			PLATFORM_DYK_IW4_MSG40
-LANG_ENGLISH		"Your matches are being automatically recorded. You can watch them at the theater menu."
-
-REFERENCE			PLATFORM_DYK_IW4_MSG41
-LANG_ENGLISH		"Don't want to level up? Check out the unlock stats feature at the barracks menu."
-
-REFERENCE			PLATFORM_DYK_IW4_MSG42
-LANG_ENGLISH		"Check out the store menu for the latest downloadable content."
-
-REFERENCE			PLATFORM_DYK_IW4_MSG43
-LANG_ENGLISH		"You can adjust your field of view at the video options."
-
-REFERENCE			PLATFORM_DYK_IW4_MSG44
-LANG_ENGLISH		"If you like a specific server, you can add it to your favorites."
 
 REFERENCE			PERKS_PAINKILLER
 LANG_ENGLISH		"Juiced"
