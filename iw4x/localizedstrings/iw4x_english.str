@@ -1,6 +1,9 @@
 VERSION				"1"
 FILENOTES			"Official IW4x localized strings"
 
+REFERENCE			MENU_CANCEL_WITH_B
+LANG_ENGLISH		"Cancel [{+stance}]"
+
 REFERENCE			MENU_WAITING_FOR_MORE_PLAYERS_TEAMS
 LANG_ENGLISH		"Waiting for a better host"
 
