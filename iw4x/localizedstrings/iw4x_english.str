@@ -121,6 +121,9 @@ LANG_ENGLISH			"Killstreak Rewards attained from airdrop crates do not count tow
 REFERENCE			PLATFORM_DYK_IW4_MSG39
 LANG_ENGLISH			"Akimbo weapons give you more firepower but restrict your ability to aim down the sight."
 
+REFERENCE			NETWORK_STRICT
+LANG_ENGLISH		"^1Strict"
+
 REFERENCE			PLATFORM_UI_SELECTBUTTON
 LANG_ENGLISH		"[{+gostand}]"
 
@@ -132,6 +135,9 @@ LANG_ENGLISH		"GAME SUMMARY    [{weapnext}]"
 
 REFERENCE			PLATFORM_BACK_CAPS
 LANG_ENGLISH		"BACK    [{+stance}]"
+
+REFERENCE			PLATFORM_CLOSE_CAPS
+LANG_ENGLISH		"CLOSE    [{+stance}]"
 
 REFERENCE           PLATFORM_PRESS_TO_SKIP
 LANG_ENGLISH        "[{+usereload}] Skip"
@@ -165,9 +171,6 @@ LANG_ENGLISH		"[{weapnext}] Clear Kill Streaks"
 
 REFERENCE			PLATFORM_VIEW_CHALLENGE_DETAILS
 LANG_ENGLISH		"[{+usereload}] Challenge Details"
-
-REFERENCE			MENU_SEARCHINGFORGAMES_100MS
-LANG_ENGLISH		"Searching for available games"
 
 REFERENCE			PLATFORM_RELOAD
 LANG_ENGLISH		"Reload"
@@ -378,7 +381,7 @@ REFERENCE           WEAPON_DESERTEAGLEGOLD_BLING
 LANG_ENGLISH        "Gold Desert Eagle Bling"
 
 REFERENCE			MENU_RECONNECTING_TO_PARTY
-LANG_ENGLISH		"CONNECTING TO SERVER"
+LANG_ENGLISH		"CONNECTING TO LOBBY"
 
 REFERENCE			EXE_AWAITINGGAMESTATE
 LANG_ENGLISH		"Awaiting gamestate"
@@ -816,7 +819,7 @@ REFERENCE			MP_SEARCHING_FOR_PLAYER
 LANG_ENGLISH		"Searching"
 
 REFERENCE			MENU_WAITING_FOR_MORE_PLAYERS_TEAMS
-LANG_ENGLISH		"Finding more players to balance teams"
+LANG_ENGLISH		"Waiting for a better host"
 
 REFERENCE			MENU_GAME
 LANG_ENGLISH		"Game"
