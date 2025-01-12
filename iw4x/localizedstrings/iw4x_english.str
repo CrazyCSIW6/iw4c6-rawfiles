@@ -1,6 +1,9 @@
 VERSION				"1"
 FILENOTES			"Official IW4x localized strings"
 
+REFERENCE			MENU_WAITING_FOR_MORE_PLAYERS_TEAMS
+LANG_ENGLISH		"Waiting for a better host"
+
 REFERENCE			PLATFORM_DYK_IW4_MSG1
 LANG_ENGLISH			"Complete Perk challenges to unlock upgraded Perks."
 
