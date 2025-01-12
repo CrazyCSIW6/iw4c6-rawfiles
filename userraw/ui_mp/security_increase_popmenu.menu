@@ -315,7 +315,7 @@
 			type 1
 			textfont 3
 			textalign 6
-			textalignx -24
+			textalignx -10
 			textscale 0.375
 			text "@MENU_CANCEL_WITH_B"
 			visible when ( 1 )
