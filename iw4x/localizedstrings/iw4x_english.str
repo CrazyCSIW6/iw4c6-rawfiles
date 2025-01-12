@@ -980,6 +980,9 @@ LANG_ENGLISH		"Stream Friendly UI"
 REFERENCE			MPUI_DESC_STREAM_FRIENDLY_UI
 LANG_ENGLISH		"Hide friend status notifications and server info on scoreboard."
 
+REFERENCE			NETWORK_STRICT
+LANG_ENGLISH		"^1Strict"
+
 REFERENCE			QUICKMESSAGE_QUICK_MESSAGE
 LANG_ENGLISH		"Quick Message"
 
