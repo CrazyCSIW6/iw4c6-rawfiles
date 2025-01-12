@@ -15,7 +15,7 @@
 		}
 		onClose
 		{
-			execnow "xupdatepartystate";
+			exec "xsessionupdate";
 		}
 		onEsc
 		{
@@ -206,6 +206,7 @@
 			{
 				play "mouse_click";
 				exec "ui_mapname mp_afghan";
+				exec "xsessionupdate";
 				close "settings_map";
 				close self;
 			}
@@ -255,6 +256,7 @@
 			{
 				play "mouse_click";
 				exec "ui_mapname mp_derail";
+				exec "xsessionupdate";
 				close "settings_map";
 				close self;
 			}
@@ -304,6 +306,7 @@
 			{
 				play "mouse_click";
 				exec "ui_mapname mp_estate";
+				exec "xsessionupdate";
 				close "settings_map";
 				close self;
 			}
@@ -353,6 +356,7 @@
 			{
 				play "mouse_click";
 				exec "ui_mapname mp_favela";
+				exec "xsessionupdate";
 				close "settings_map";
 				close self;
 			}
@@ -402,6 +406,7 @@
 			{
 				play "mouse_click";
 				exec "ui_mapname mp_highrise";
+				exec "xsessionupdate";
 				close "settings_map";
 				close self;
 			}
@@ -451,6 +456,7 @@
 			{
 				play "mouse_click";
 				exec "ui_mapname mp_invasion";
+				exec "xsessionupdate";
 				close "settings_map";
 				close self;
 			}
@@ -500,6 +506,7 @@
 			{
 				play "mouse_click";
 				exec "ui_mapname mp_checkpoint";
+				exec "xsessionupdate";
 				close "settings_map";
 				close self;
 			}
@@ -549,6 +556,7 @@
 			{
 				play "mouse_click";
 				exec "ui_mapname mp_quarry";
+				exec "xsessionupdate";
 				close "settings_map";
 				close self;
 			}
@@ -598,6 +606,7 @@
 			{
 				play "mouse_click";
 				exec "ui_mapname mp_rundown";
+				exec "xsessionupdate";
 				close "settings_map";
 				close self;
 			}
@@ -647,6 +656,7 @@
 			{
 				play "mouse_click";
 				exec "ui_mapname mp_rust";
+				exec "xsessionupdate";
 				close "settings_map";
 				close self;
 			}
@@ -696,6 +706,7 @@
 			{
 				play "mouse_click";
 				exec "ui_mapname mp_boneyard";
+				exec "xsessionupdate";
 				close "settings_map";
 				close self;
 			}
@@ -745,6 +756,7 @@
 			{
 				play "mouse_click";
 				exec "ui_mapname mp_nightshift";
+				exec "xsessionupdate";
 				close "settings_map";
 				close self;
 			}
@@ -794,6 +806,7 @@
 			{
 				play "mouse_click";
 				exec "ui_mapname mp_subbase";
+				exec "xsessionupdate";
 				close "settings_map";
 				close self;
 			}
@@ -843,6 +856,7 @@
 			{
 				play "mouse_click";
 				exec "ui_mapname mp_terminal";
+				exec "xsessionupdate";
 				close "settings_map";
 				close self;
 			}
@@ -892,6 +906,7 @@
 			{
 				play "mouse_click";
 				exec "ui_mapname mp_underpass";
+				exec "xsessionupdate";
 				close "settings_map";
 				close self;
 			}
@@ -941,6 +956,7 @@
 			{
 				play "mouse_click";
 				exec "ui_mapname mp_brecourt";
+				exec "xsessionupdate";
 				close "settings_map";
 				close self;
 			}
