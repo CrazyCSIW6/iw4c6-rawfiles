@@ -265,6 +265,14 @@
 				close "popup_findgame";
 				open "menu_xboxlive_lobby";
 			}
+			doubleclick
+			{
+				play "mouse_click";
+				exec "xstartlobby";
+				exec "updategamerprofile";
+				close "popup_findgame";
+				open "menu_xboxlive_lobby";
+			}
 			action
 			{
 				play "mouse_over";
