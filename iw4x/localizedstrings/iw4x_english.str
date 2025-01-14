@@ -7,6 +7,15 @@ LANG_ENGLISH		"Cancel [{+stance}]"
 REFERENCE			MENU_WAITING_FOR_MORE_PLAYERS_TEAMS
 LANG_ENGLISH		"Waiting for a better host"
 
+REFERENCE			PLATFORM_OPTIONS_VIBRATION_DESC
+LANG_ENGLISH			"Enable or disable controller vibration."
+
+REFERENCE			PLATFORM_OPTIONS_HORIZONTAL_MARGIN_DESC
+LANG_ENGLISH			"Adjust the horizontal margin of your in-game HUD."
+
+REFERENCE			PLATFORM_OPTIONS_VERTICAL_MARGIN_DESC
+LANG_ENGLISH			"Adjust the vertical margin of your in-game HUD."
+
 REFERENCE			PLATFORM_DYK_IW4_MSG1
 LANG_ENGLISH			"Complete Perk challenges to unlock upgraded Perks."
 
