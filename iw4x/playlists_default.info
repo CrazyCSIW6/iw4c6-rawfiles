@@ -11,6 +11,10 @@ set session_advertiseFailedSearchCount 12
 set com_maxfps 85
 set cg_fov 65
 set cg_fovScale 1
+set cl_voice 1
+set sv_voice 1
+set sv_voiceQuality 3
+set winvoice_mic_mute 0
 set scr_airdrop_nuke 0
 set scr_airdrop_mega_nuke 0
 set bg_fallDamageMaxHeight 300
