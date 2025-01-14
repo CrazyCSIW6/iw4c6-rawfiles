@@ -1,17 +1,11 @@
 VERSION				"1"
 FILENOTES			"Official IW4x localized strings"
 
-REFERENCE			PLATFORM_PRESS_TO_COPYCAT
-LANG_ENGLISH			"[{weapnext}] Steal their class!"
-
 REFERENCE			MENU_CANCEL_WITH_B
-LANG_ENGLISH		"Cancel "
+LANG_ENGLISH		"Cancel [{+stance}]"
 
 REFERENCE			MENU_WAITING_FOR_MORE_PLAYERS_TEAMS
 LANG_ENGLISH		"Waiting for a better host"
-
-REFERENCE			PLATFORM_COWARDS_WAY_OUT
-LANG_ENGLISH			"Press and hold  Coward's way out"
 
 REFERENCE			PLATFORM_OPTIONS_VIBRATION_DESC
 LANG_ENGLISH			"Enable or disable controller vibration."
@@ -143,28 +137,19 @@ REFERENCE			PLATFORM_DYK_IW4_MSG39
 LANG_ENGLISH			"Akimbo weapons give you more firepower but restrict your ability to aim down the sight."
 
 REFERENCE			PLATFORM_UI_SELECTBUTTON
-LANG_ENGLISH		""
-
-REFERENCE			PLATFORM_UI_SELECTBUTTON_SELECT
-LANG_ENGLISH			"Press  to select."
-
-REFERENCE			PLATFORM_UI_PRESS_BUTTONSELECTCHOICE
-LANG_ENGLISH			"Press  to skip."
+LANG_ENGLISH		"[{+gostand}]"
 
 REFERENCE			PLATFORM_UI_LMAOXBUTTON
-LANG_ENGLISH		""
-
-REFERENCE			PLATFORM_RELOAD
-LANG_ENGLISH		" Reload"
+LANG_ENGLISH		"[{+usereload}]"
 
 REFERENCE			PLATFORM_GAME_SUMMARY_CAPS
-LANG_ENGLISH		"GAME SUMMARY    "
+LANG_ENGLISH		"GAME SUMMARY    [{weapnext}]"
 
 REFERENCE			PLATFORM_BACK_CAPS
-LANG_ENGLISH		"BACK    "
+LANG_ENGLISH		"BACK    [{+stance}]"
 
-REFERENCE			PLATFORM_CLOSE_BUTTONCANCEL_CAPS
-LANG_ENGLISH		"CLOSE    "
+REFERENCE			PLATFORM_CLOSE_CAPS
+LANG_ENGLISH		"CLOSE    [{+stance}]"
 
 REFERENCE           PLATFORM_PRESS_TO_SKIP
 LANG_ENGLISH        "[{+usereload}] Skip"
@@ -188,13 +173,13 @@ REFERENCE			PLATFORM_VIEW_CHALLENGES
 LANG_ENGLISH		"[{+usereload}] View Challenges"
 
 REFERENCE           PLATFORM_UNLOCK_KILLSTREAK
-LANG_ENGLISH        "Press  to unlock killstreak."
+LANG_ENGLISH        "Press [{+gostand}] to unlock killstreak."
 
 REFERENCE           PLATFORM_UI_CLEAR_ATTACHMENTS
-LANG_ENGLISH        " CLEAR ATTACHMENTS"
+LANG_ENGLISH        "[{weapnext}] CLEAR ATTACHMENTS"
 
 REFERENCE			PLATFORM_UI_CLEAR_KILLSTREAKS
-LANG_ENGLISH		" Clear Kill Streaks"
+LANG_ENGLISH		"[{weapnext}] Clear Kill Streaks"
 
 REFERENCE			PLATFORM_VIEW_CHALLENGE_DETAILS
 LANG_ENGLISH		"[{+usereload}] Challenge Details"
@@ -205,14 +190,17 @@ LANG_ENGLISH		""
 REFERENCE			PLATFORM_RELOAD
 LANG_ENGLISH		"Reload"
 
+REFERENCE			MPUI_IW4C6_MOTD
+LANG_ENGLISH		""It's not OP, it's just retarded." -Hadsake\n"Raise a Peter is underrated." -Wildframed\n"I am not unblocking you until you apologize for fucking with my emotions like that. That 'game' is fucked up, and you know it." -MrRhino683\n"If there's one good thing Elon Musk has done, it's dispell the myth that billionaires are intelligent beings." -Mister Sandman"
+
 REFERENCE			PLATFORM_CONTINUE_CAPS
-LANG_ENGLISH		" CONTINUE"
+LANG_ENGLISH		"[{+gostand}] CONTINUE"
 
 REFERENCE			PLATFORM_USE_BUTTONLOOK_TO_AIM
-LANG_ENGLISH			"Use  to aim"
+LANG_ENGLISH			"Use [{+melee}] to aim"
 
 REFERENCE			PLATFORM_PRESS_BUTTON_TO_CONFIRM_TARGET
-LANG_ENGLISH			"Press  to confirm target"
+LANG_ENGLISH			"Press [{+attack}] to confirm target"
 
 
 REFERENCE			PLATFORM_USEONLINESTATS_TRUE
