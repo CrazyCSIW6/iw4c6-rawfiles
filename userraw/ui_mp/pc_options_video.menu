@@ -596,8 +596,222 @@
 		}
 		itemDef
 		{
-			name "button_snd_volume"
+			name "button_safearea_adjusted_horizontal"
 			rect -64 128 336 20 1 1
+			group "mw2_button"
+			style 1
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			disablecolor 0.6 0.55 0.55 1
+			background "menu_button_selection_bar"
+			type 1
+			textfont 3
+			textalign 6
+			textalignx -60
+			textscale 0.375
+			text "@MENU_HUD_MARGIN_HORIZONTAL_CAPS"
+			action
+			{
+				play "mouse_click";
+			}
+			onFocus
+			{
+				play "mouse_over";
+				if ( dvarstring( "gameMode" ) != "mp" )
+				{
+					setItemColor "mw2_button" backcolor 0 0 0 0;
+				}
+				setItemColor self backcolor 0 0 0 1;
+				setLocalVarBool "ui_menuAButton" ( 1 );
+				setLocalVarFloat "ui_popupYPos" ( getfocuseditemy( ) );
+			}
+			leaveFocus
+			{
+				setItemColor self backcolor 0 0 0 "0.0";
+				setLocalVarString "ui_hint_text" ( "@NULL_EMPTY" );
+				setLocalVarBool "ui_menuAButton" ( 0 );
+			}
+		}
+		itemDef
+		{
+			name "slider_safearea_adjusted_horizontal"
+			rect 248 128 128 20 1 1
+			visible 1
+			forecolor 1 1 1 1
+			type 10
+			textscale 0.55
+			dvarFloat "safeArea_adjusted_horizontal" 0.85 0.85 1
+			action
+			{
+				exec "profile_menuDvarsFinish; wait; wait; resetViewport";
+			}
+			onFocus
+			{
+				play "mouse_over";
+				setItemColor "button_safearea_adjusted_horizontal" backcolor 0 0 0 1;
+				show "safe_area_demo";
+				show "safe_area_demo_lr";
+				setLocalVarString "ui_options_hint_text" ( "@PLATFORM_OPTIONS_HORIZONTAL_MARGIN_DESC" );
+			}
+			leaveFocus
+			{
+				setItemColor "button_safearea_adjusted_horizontal" backcolor 0 0 0 "0.0";
+				hide "safe_area_demo";
+				hide "safe_area_demo_lr";
+			}
+		}
+		itemDef
+		{
+			name "button_safearea_adjusted_vertical"
+			rect -64 148 336 20 1 1
+			group "mw2_button"
+			style 1
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			disablecolor 0.6 0.55 0.55 1
+			background "menu_button_selection_bar"
+			type 1
+			textfont 3
+			textalign 6
+			textalignx -60
+			textscale 0.375
+			text "@MENU_HUD_MARGIN_VERTICAL_CAPS"
+			action
+			{
+				play "mouse_click";
+			}
+			onFocus
+			{
+				play "mouse_over";
+				if ( dvarstring( "gameMode" ) != "mp" )
+				{
+					setItemColor "mw2_button" backcolor 0 0 0 0;
+				}
+				setItemColor self backcolor 0 0 0 1;
+				setLocalVarBool "ui_menuAButton" ( 1 );
+				setLocalVarFloat "ui_popupYPos" ( getfocuseditemy( ) );
+			}
+			leaveFocus
+			{
+				setItemColor self backcolor 0 0 0 "0.0";
+				setLocalVarString "ui_hint_text" ( "@NULL_EMPTY" );
+				setLocalVarBool "ui_menuAButton" ( 0 );
+			}
+		}
+		itemDef
+		{
+			name "slider_safearea_adjusted_vertical"
+			rect 248 148 128 20 1 1
+			visible 1
+			forecolor 1 1 1 1
+			type 10
+			textscale 0.55
+			dvarFloat "safeArea_adjusted_vertical" 0.85 0.85 1
+			action
+			{
+				exec "profile_menuDvarsFinish; wait; wait; resetViewport";
+			}
+			onFocus
+			{
+				play "mouse_over";
+				setItemColor "button_safearea_adjusted_vertical" backcolor 0 0 0 1;
+				show "safe_area_demo";
+				show "safe_area_demo_tb";
+				setLocalVarString "ui_options_hint_text" ( "@PLATFORM_OPTIONS_VERTICAL_MARGIN_DESC" );
+			}
+			leaveFocus
+			{
+				setItemColor "button_safearea_adjusted_vertical" backcolor 0 0 0 "0.0";
+				hide "safe_area_demo";
+				hide "safe_area_demo_tb";
+			}
+		}
+		itemDef
+		{
+			rect -100 0 100 600 8 8
+			group "safe_area_demo"
+			style 1
+			decoration
+			forecolor 1 1 1 1
+			backcolor 0.4 0.45 0.5 0.5
+			textscale 0.55
+		}
+		itemDef
+		{
+			rect 0 -64 -32 128 8 2
+			group "safe_area_demo_lr"
+			style 3
+			decoration
+			forecolor 1 1 1 1
+			background "summary_arrow"
+			textscale 0.55
+		}
+		itemDef
+		{
+			rect 0 -600 100 600 10 10
+			group "safe_area_demo"
+			style 1
+			decoration
+			forecolor 1 1 1 1
+			backcolor 0.4 0.45 0.5 0.5
+			textscale 0.55
+		}
+		itemDef
+		{
+			rect -32 -64 32 128 10 2
+			group "safe_area_demo_lr"
+			style 3
+			decoration
+			forecolor 1 1 1 1
+			background "summary_arrow"
+			textscale 0.55
+		}
+		itemDef
+		{
+			rect -2000 -100 2000 100 10 8
+			group "safe_area_demo"
+			style 1
+			decoration
+			forecolor 1 1 1 1
+			backcolor 0.4 0.45 0.5 0.5
+			textscale 0.55
+		}
+		itemDef
+		{
+			rect -64 0 128 32 2 8
+			group "safe_area_demo_tb"
+			style 3
+			decoration
+			forecolor 1 1 1 1
+			background "summary_arrow_up"
+			textscale 0.55
+		}
+		itemDef
+		{
+			rect 0 0 2000 100 8 10
+			group "safe_area_demo"
+			style 1
+			decoration
+			forecolor 1 1 1 1
+			backcolor 0.4 0.45 0.5 0.5
+			textscale 0.55
+		}
+		itemDef
+		{
+			rect -64 -32 128 -32 2 10
+			group "safe_area_demo_tb"
+			style 3
+			decoration
+			forecolor 1 1 1 1
+			background "summary_arrow_up"
+			textscale 0.55
+		}
+		itemDef
+		{
+			name "button_snd_volume"
+			rect -64 168 336 20 1 1
 			group "mw2_button"
 			style 1
 			decoration
@@ -636,7 +850,7 @@
 		itemDef
 		{
 			name "slider_snd_volume"
-			rect 248 128 128 20 1 1
+			rect 248 168 128 20 1 1
 			visible 1
 			forecolor 1 1 1 1
 			type 10
@@ -661,7 +875,7 @@
 		itemDef
 		{
 			name "button_ps3_voiceSpeakerGain"
-			rect -64 148 336 20 1 1
+			rect -64 188 336 20 1 1
 			group "mw2_button"
 			style 1
 			decoration
@@ -700,7 +914,7 @@
 		itemDef
 		{
 			name "slider_ps3_voiceSpeakerGain"
-			rect 248 148 128 20 1 1
+			rect 248 188 128 20 1 1
 			visible 1
 			forecolor 1 1 1 1
 			type 10
@@ -720,7 +934,7 @@
 		itemDef
 		{
 			name "button_r_gamma"
-			rect -64 168 336 20 1 1
+			rect -64 208 336 20 1 1
 			group "mw2_button"
 			style 1
 			decoration
@@ -759,7 +973,7 @@
 		itemDef
 		{
 			name "slider_r_gamma"
-			rect 248 168 128 20 1 1
+			rect 248 208 128 20 1 1
 			visible 1
 			forecolor 1 1 1 1
 			type 10
