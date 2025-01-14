@@ -1,4 +1,4 @@
-version 450
+version 456
 
 set party_gameStartTimerLength 8
 set scr_xpscale 1
@@ -488,10 +488,10 @@ description russian "                              .                            
 description japanese " ^         ̃` [   f X } b ` B\n G v   C   [  ` [     [ N œ|  \n X R A   ~ b g ɓ  B    Ώ      B\n\n__________\n v   C   [   F8 `12"
 description korean "                ġ.      ÷  ̾        ̰   ְ              ϱ           ũ        ض .\n__________\n ÷  ̾ :8-12"
 unlockxp 0
-maxparty 6
+maxparty 12
 rule party_minplayers 1
 rule party_maxplayers 12
-rule party_matchedplayercount 4
+rule party_matchedplayercount 2
 
 mp_afghan,tdm,4
 mp_boneyard,tdm,4
@@ -529,10 +529,10 @@ description polish "Deathmatch. Ka dy dzia a na w asn  r k  i pr buje zabi  inny
 description russian "                               .                    :              .\n\n__________\n      : 4-8"
 description japanese " ^         ̃f X } b ` B\n     ȊO ͂  ׂēG B G ͂  ׂĎE   B\n\n__________\n v   C   [   F4 `8"
 unlockxp 0
-maxparty 1
+maxparty 8
 rule party_minplayers 1
 rule party_maxplayers 8
-rule party_matchedplayercount 4
+rule party_matchedplayercount 2
 rule scr_dm_scorelimit 1500
 rule cg_everyonehearseveryone 1
 
@@ -587,10 +587,10 @@ description russian "                   3      ,                                
 description japanese " X e [ W   3 ̃t   b O  D 悷  B\n t   b O   ƂɃ| C   g     邽  \n Ȃ ׂ      D 悷  K v      B\n__________\n v   C   [   F8 `12"
 description korean "3           ȹ   ض .                                 ν              ȴ .               ȹ   Ҽ                     ´ .\n__________\n ÷  ̾ :8-12"
 unlockxp 3600
-maxparty 6
+maxparty 12
 rule party_minplayers 1
 rule party_maxplayers 12
-rule party_matchedplayercount 4
+rule party_matchedplayercount 2
 
 mp_afghan,dom,1
 mp_boneyard,dom,1
@@ -628,10 +628,10 @@ description russian "               '''             ''   ''             ''      
 description japanese "  l   ` [       B ` [   f X } b `  \n h ~ l [ V     B\n\n__________\n v   C   [   F12 `18"
 description korean "ū   ü     -          ġ       \n__________\n ÷  ̾ :12-18"
 unlockxp 3600
-maxparty 9
+maxparty 18
 rule party_minplayers 1
 rule party_maxplayers 18
-rule party_matchedplayercount 4
+rule party_matchedplayercount 2
 rule scr_war_scorelimit 10000
 
 mp_afghan,dom,1
@@ -683,10 +683,10 @@ description polish "We  bomb  i pod   j  w pobli u wrog. celu. Osoba, kt ra pier
 description russian "                                                        .        ,                     ,          !\n\n__________\n      : 8-12"
 description japanese "   e  E   ēG w ̔  j | C   g ɐݒu    B\n ŏ  ɋN         ̏      I\n\n__________\n v   C   [   F8 `12"
 unlockxp 29700
-maxparty 6
+maxparty 12
 rule party_minplayers 1
 rule party_maxplayers 12
-rule party_matchedplayercount 4
+rule party_matchedplayercount 2
 
 mp_afghan,sab,1
 mp_boneyard,sab,1
@@ -723,10 +723,10 @@ description polish "Wybrany sztab aktywuje si  za 30 sek.  Zajmij sztab i bro  g
 description russian "                       ,                                     30                    .                            .                                        .\n__________\n      : 8-12"
 description japanese " ڕW ̎i ߕ  ̓} [ L   O    A30 b ȓ  \n N      B D 悵       Ŗh q    B\n        Ԃ      قǁA     _  l   ł   B\n__________\n v   C   [   F8 `12"
 unlockxp 29700
-maxparty 6
+maxparty 12
 rule party_minplayers 1
 rule party_maxplayers 12
-rule party_matchedplayercount 4
+rule party_matchedplayercount 2
 
 mp_afghan,hq_pro,1
 mp_boneyard,hq_pro,1
@@ -764,10 +764,10 @@ description russian "                                      .                    
 description japanese "     Ȃ  B ڕW ̖h q ܂  ͔j   s   B\n\n__________\n v   C   [   F8 `12\n     F I t"
 description korean "           .   ǥ       ϰ   ı  ض .\n__________\n ÷  ̾ :8-12"
 unlockxp 53100
-maxparty 6
+maxparty 12
 rule party_minplayers 1
 rule party_maxplayers 12
-rule party_matchedplayercount 4
+rule party_matchedplayercount 2
 
 mp_afghan,sd,1
 mp_boneyard,sd,1
@@ -789,10 +789,10 @@ playlist 9 // mosh pit playlist
 name english "Mosh Pit"
 description english "Mixed bag of many gamemodes in one playlist.\n__________\nPlayers:8-12"
 unlockxp 53100
-maxparty 6
+maxparty 12
 rule party_minplayers 1
 rule party_maxplayers 12
-rule party_matchedplayercount 4
+rule party_matchedplayercount 2
 
 mp_afghan,tdm,1
 mp_boneyard,tdm,1
@@ -917,10 +917,10 @@ description polish "Graj w gr  dowoln  lub dru ynowy DM. Wszystkie premie za ser
 description russian "               '             '   '              '.                                    .\n\n__________\n      : 4-8"
 description japanese " t   [ E t H [ E I [   A ` [   f X } b `\n  L   X g   [ N  V Ȃ  Ńv   C    B\n\n__________\n v   C   [   F4 `8"
 unlockxp 85500
-maxparty 6
+maxparty 8
 rule party_minplayers 1
 rule party_maxplayers 8
-rule party_matchedplayercount 4
+rule party_matchedplayercount 2
 rule scr_game_hardpoints 0
 
 mp_afghan,tc_tdm,4
@@ -973,10 +973,10 @@ description polish "Dominacja, Wysadzanie, Sztab Pro, Zdobywanie flagi. Premie z
 description russian "               '             ', '          ', '    ,      '   '            '.                                    .\n__________\n      : 8-12"
 description japanese " h ~ l [ V     A w b h N H [ ^ [ F v   A\n f     b V     A L   v `   [ E U E t   b O\n  L   X g   [ N  V Ȃ  Ńv   C    B\n__________\n v   C   [   F8 `12"
 unlockxp 85500
-maxparty 6
+maxparty 12
 rule party_minplayers 1
-rule party_maxplayers 8
-rule party_matchedplayercount 4
+rule party_maxplayers 12
+rule party_matchedplayercount 2
 rule scr_game_hardpoints 0
 
 mp_afghan,dom,1
@@ -1057,10 +1057,10 @@ description polish "Dla ma ych dru yn DM Dru ynowy, Dominacja, Zdob d  flag  i W
 description russian "                                    '             ', '             ', '            ', '           '   '     '.\n\n__________\n      : 6-8"
 description japanese "   l   ɂ  ` [   f X } b ` A\n h ~ l [ V     A L   v `   [ E U E t   b O\n T [ `& f X g   C    уf     b V     B\n\n__________\n v   C   [   F6 `8"
 unlockxp 126900
-maxparty 4
+maxparty 8
 rule party_minplayers 1
 rule party_maxplayers 8
-rule party_matchedplayercount 4
+rule party_matchedplayercount 2
 
 mp_afghan,tc_tdm,1
 mp_boneyard,tc_tdm,1
@@ -1128,10 +1128,10 @@ description polish "Tryby DM Dru ynowy, Dominacja, Zdob d  flag  i Wysadzanie z 
 description russian "'             '', ''             '', ''            ''   ''           ''                         .\n\n__________\n      : 6-8"
 description japanese "3 l ̎  _ ̃` [   f X } b ` A\n h ~ l [ V     A L   v `   [ E U E t   b O\n    уf     b V     B\n\n__________\n v   C   [   F6 `8"
 unlockxp 126900
-maxparty 4
+maxparty 8
 rule party_minplayers 1
 rule party_maxplayers 8
-rule party_matchedplayercount 4
+rule party_matchedplayercount 2
 set camera_thirdPersonFovScale 0.9
 set camera_thirdPersonOffset -120 0 14
 set camera_thirdPersonOffsetAds -60 -20 4
@@ -1191,10 +1191,10 @@ description russian "'             ''                     .\n\n\n__________\n   
 description japanese "HUD     A e ۃ_   [ W   A   m         \n ` [   f X } b ` B\n\n\n__________\n v   C   [   F8 `12\n     ւ̌ ˁF I  "
 description korean "         ġ: HUD     .  Ѿ   ջ      .  Ʊ         .\n__________\n ÷  ̾ :8-12"
 unlockxp 126900
-maxparty 6
+maxparty 12
 rule party_minplayers 1
 rule party_maxplayers 12
-rule party_matchedplayercount 4
+rule party_matchedplayercount 2
 rule party_readypercentrequired 0
 
 mp_afghan,hc_tdm,1
@@ -1232,10 +1232,10 @@ description polish "Znajd  i zniszcz hc z rykosz. ostrza em przyj.\n__________\n
 description russian "              ''     ''                                                .\n\n__________\n      : 8-12\n                                 \n                        \n                            ,              "
 description japanese " n [ h R A A   e   [   ̃T [ `   f X g   C B\nHUD     A e ۃ_   [ W   A   m        B\n\n__________\n v   C   [   F8 `12\n     ւ̌ ˂͌      ҂ɒ  ˕Ԃ B"
 unlockxp 126900
-maxparty 6
+maxparty 12
 rule party_minplayers 1
 rule party_maxplayers 12
-rule party_matchedplayercount 4
+rule party_matchedplayercount 2
 
 mp_afghan,ric_sd,1
 mp_boneyard,ric_sd,1
@@ -1271,10 +1271,10 @@ description polish "Sztab Pro + Hardcore rykoszet\n__________\nGracze:8-12\nOgra
 description russian "      ''    ,      ''             ''       ''   ''                    ''.\n__________\n      :8-12\n                                 \n                        \n                                       ,              "
 description japanese " n [ h R A ̃w b h N E H [ ^ [PRO B\nHUD     A e ۃ_   [ W   B\n__________\n v   C   [   F8 `12\n     ւ̌ ˂͎    ɒ  ˕Ԃ B"
 unlockxp 126900
-maxparty 6
+maxparty 12
 rule party_minplayers 1
 rule party_maxplayers 12
-rule party_matchedplayercount 4
+rule party_matchedplayercount 2
 
 mp_afghan,ric_hq_pro,4
 mp_boneyard,ric_hq_pro,4
@@ -1311,10 +1311,10 @@ description polish "Ro ne typy gry hardcore na jednej li cie.\n__________\nGracz
 description russian "                                                                     .\n\n__________\n      : 8-12"
 description japanese " e  n [ h R A   [ h      _   ŁB\n__________\n v   C   [   F8 `12"
 unlockxp 126900
-maxparty 6
+maxparty 12
 rule party_minplayers 1
 rule party_maxplayers 12
-rule party_matchedplayercount 4
+rule party_matchedplayercount 2
 
 mp_afghan,hc_tdm,1
 mp_boneyard,hc_tdm,1
