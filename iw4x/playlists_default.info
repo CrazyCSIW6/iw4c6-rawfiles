@@ -1,14 +1,16 @@
 version 450
 
-rule party_gameStartTimerLength 8
-rule scr_xpscale 1
-rule scr_restxp_enable 0
-rule session_immediateDeleteTinySessions 1
-rule requireOpenNat 1
-rule cg_drawfps 0
-rule party_minlobbytime 45
-rule session_advertiseFailedSearchCount 12
-rule com_maxfps 85
+set party_gameStartTimerLength 8
+set scr_xpscale 1
+set scr_restxp_enable 0
+set session_immediateDeleteTinySessions 1
+set requireOpenNat 1
+set cg_drawfps 0
+set party_minlobbytime 45
+set session_advertiseFailedSearchCount 12
+set com_maxfps 85
+set cg_fov 65
+set cg_fovScale 1
 set scr_airdrop_nuke 0
 set scr_airdrop_mega_nuke 0
 set bg_fallDamageMaxHeight 300
