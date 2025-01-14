@@ -70,8 +70,8 @@ set aim_slowdown_yaw_scale_ads 0.5
 set aim_slowdown_region_width 90
 set aim_slowdown_region_height 90
 set cg_drawThroughWalls 0
-set party_connectToOthers 0
-set party_hostmigration 0
+set party_connectToOthers 1
+set party_hostmigration 1
 
 set bg_aimSpreadMoveSpeedThreshold 11
 set bg_maxGrenadeIndicatorSpeed 100
