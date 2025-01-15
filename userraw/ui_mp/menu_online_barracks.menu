@@ -1119,7 +1119,7 @@
 			forecolor 1 1 1 1
 			type 20
 			textscale 0.375
-			text "Welcome to Modern Warfare 2!\nCamping is for noobs and hippies.\nThe community has collectively spent 50,000 hours in-game.\nThe highest killstreak reached by any player is 105.\nAverage accuracy across all players is 60%.\nCommunity-wide headshot count exceeds 250,000.\nPlayers have delivered a staggering 500,000 melee kills.\nSharpshooters have tallied 50,000 quickscope kills.\nOver 1,000,000 grenades have been tossed into the fray.\nOver 10,000 players boast an impressive 80%+ accuracy\nOur most dedicated player has logged 2,000 hours in the game!\nStop procrastinating; your K/D ratio won't improve on its own!\nThe only thing you should pitch is a grenade, not a tent.\nThe victory bell has rung 150,000 times in our games."
+			text "Welcome to Modern Warfare 2 multiplayer"
 			speed 50
 			spacing 30
 			exp rect w ( 544 + ( dvarint( "widescreen" ) * 182 ) )
