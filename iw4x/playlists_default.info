@@ -515,7 +515,7 @@ mp_terminal,tdm,4
 mp_underpass,tdm,4
 
 playlist 2 // ffa gametype
-name english "Free-for-all^8*^7"
+name english "Free-for-all"
 name french "M l e g n rale"
 name italian "Tutti contro tutti"
 name german "Frei f r alle"
@@ -524,7 +524,7 @@ name polish "Tryb dowolny"
 name russian "              "
 name japanese " t   [ E t H [ E I [  "
 name korean "      "
-description english "Straight up Deathmatch.  Every man for himself.  Kill everyone.\n\n__________\nPlayers:4-8\n^8*^3Xbox LIVE Party Chat allowed"
+description english "Straight up Deathmatch.  Every man for himself.  Kill everyone.\n\n__________\nPlayers:4-8"
 description french "Match   mort classique. Une r gle : chacun pour soi. N' pargnez personne.\n\n__________\nJoueurs : 4-8"
 description italian "Deathmatch, nudo e crudo. Ognuno per s . Uccidi tutti.\n\n__________\nGiocatori: 4-8"
 description german "Ganz normales Deathmatch. Jeder k mpft hier f r sich allein und gegen jeden.\n\n__________\nSpieler: 4-8"
@@ -613,7 +613,7 @@ mp_terminal,dom,1
 mp_underpass,dom,1
 
 playlist 5 // big_tdm and dom gametype
-name english "Ground War^8*^7"
+name english "Ground War"
 name french "Guerre de territoire"
 name italian "Battaglia terrestre"
 name german "Bodenangriff"
@@ -622,7 +622,7 @@ name polish "Wojn  l d."
 name russian "              "
 name japanese " O   E   h E E H ["
 name korean "         "
-description english "Big team games - Team Deathmatch and Domination.\n\n__________\nPlayers:12-18\n^8*^3Xbox LIVE Party Chat allowed"
+description english "Big team games - Team Deathmatch and Domination.\n\n__________\nPlayers:12-18"
 description french "Un mode taill  pour le jeu en  quipe avec, au menu, Match   mort par  quipe et Domination.\n\n__________\nJoueurs : 12-18"
 description italian "Modalit  per squadre numerose: Deathmatch a squadre e Dominio.\n\n__________\nGiocatori: 12-18"
 description german "Gro e Teamspiele - Team-Deathmatch und Herrschaft.\n\n__________\nSpieler: 12-18"
@@ -904,7 +904,7 @@ mp_terminal,sab,1
 mp_underpass,sab,1
 
 playlist 10 // no killstreaks playlist
-name english "Barebones Pro^8*^7"
+name english "Barebones Pro"
 name french "Essentiel Pro."
 name italian "Essenziale Pro"
 name german "Abgespeckt Pro"
@@ -912,7 +912,7 @@ name spanish "Osario (Pro)"
 name polish "Barebones Pro"
 name russian "      ,      "
 name japanese " x A { [   F v "
-description english "Play Team Deathmatch and Free-for-all. All Killstreak rewards are disabled.\n\n__________\nPlayers:4-8\n^8*^3Xbox LIVE Party Chat allowed"
+description english "Play Team Deathmatch and Free-for-all. All Killstreak rewards are disabled.\n\n__________\nPlayers:4-8"
 description french "Match   mort par  quipe et M l e g n rale. Bonus de s ries d' liminations d sactiv s.\n\n__________\nJoueurs : 4-8"
 description italian "Deathmatch a squadre e Tutti contro tutti. Tutte le ricompense uccisioni disabilitate.\n\n__________\nGiocatori: 4-8"
 description german "Spielen Sie Team-Deathmatch und Frei f r alle. Alle Abschussserienbelohnungen sind deaktiviert.\n\n__________\nSpieler: 4-8"
@@ -960,7 +960,7 @@ mp_terminal,ffa,4
 mp_underpass,ffa,4
 
 playlist 11 // no killstreaks playlist part 2
-name english "Objective Barebones Pro^8*^7"
+name english "Objective Barebones Pro"
 name french "Objectif Essentiel Pro."
 name italian "Obiettivo Essenziale Pro"
 name german "Abgespeckt Pro - Ziele"
@@ -968,7 +968,7 @@ name spanish "Objetivo Osario (Pro)"
 name polish "Barebones Pro z zadaniami"
 name russian "                ,      "
 name japanese " I u W F N e B u E x A { [   F v  "
-description english "Play Domination, Demolition, HQ Pro, and Capture the Flag. All Killstreak rewards are disabled.\n__________\nPlayers:4-8\n^8*^3Xbox LIVE Party Chat allowed"
+description english "Play Domination, Demolition, HQ Pro, and Capture the Flag. All Killstreak rewards are disabled.\n__________\nPlayers:4-8"
 description french "Domination, D molition, QG Pro et Capture du drapeau. Bonus de s ries d' liminations d sactiv s.\n__________\nJoueurs : 8-12"
 description italian "Dominio, Demolizione, QG Pro e Cattura la bandiera. Tutte le ricompense uccisioni disabilitate.\n__________\nGiocatori: 8-12"
 description german "Spielen Sie Herrschaft, Sprengkommando, HQ Pro und Capture the Flag. Alle Abschussserienbelohnungen sind deaktiviert.\n\n__________\nSpieler: 8-12"
@@ -1044,7 +1044,7 @@ mp_terminal,dd,1
 mp_underpass,dd,1
 
 playlist 12 // tc playlist
-name english "Team Tactical^8*^7"
+name english "Team Tactical"
 name french " quipe tactique"
 name italian "Modalit  Tattica"
 name german "Taktik-Teamspiele"
@@ -1052,7 +1052,7 @@ name spanish "T ctico por equipos"
 name polish "Dru . taktyczny"
 name russian "                 "
 name japanese " ` [   ^ N e B J  "
-description english "Small team based games with Team Deathmatch, Domination, Capture the Flag, Demolition, and Search and Destroy.\n\n__________\nPlayers:6-8\n^8*^3Xbox LIVE Party Chat allowed"
+description english "Small team based games with Team Deathmatch, Domination, Capture the Flag, Demolition, and Search and Destroy.\n\n__________\nPlayers:6-8"
 description french "Parties pour petites  quipes avec Match   mort par  quipe, Domination, Capture du drapeau, D molition et Recherche et destruction.\n\n__________\nJoueurs : 6-8"
 description italian "Partite per squadre ridotte con con Deathmatch a squadre, Dominazione, Cattura la bandiera, Demolizione e Cerca e distruggi.\n\n__________\nGiocatori: 6-8"
 description german "Team-Deathmatch, Herrschaft, Capture the Flag, Sprengkommando und Suchen und Zerst ren als kleine Teamspiele.\n\n__________\nSpieler: 6-8"
@@ -1115,7 +1115,7 @@ mp_terminal,sd,1
 mp_underpass,sd,1
 
 playlist 13 // 3p tc playlist
-name english "3rd Person Team Tactical^8*^7"
+name english "3rd Person Team Tactical"
 name french "3e personne par  quipe tactique"
 name italian "Modalit  Tattica a squadre 3  P."
 name german "Externe Ansicht - Taktik-Teamspiele"
@@ -1123,7 +1123,7 @@ name spanish "T ctico por equipos en TP"
 name polish "Dru . takt. z persp. 3. os"
 name russian "                 ,    3-       "
 name japanese "TPS ` [   ^ N e B J  "
-description english "Third person perspective with Team Deathmatch, Domination, Capture the Flag, and Demolition.\n\n__________\nPlayers:6-8\n^8*^3Xbox LIVE Party Chat allowed"
+description english "Third person perspective with Team Deathmatch, Domination, Capture the Flag, and Demolition.\n\n__________\nPlayers:6-8"
 description french "Match   mort par  quipe, Domination, Capture du drapeau et D molition avec vue   la 3e personne.\n\n__________\nJoueurs : 6-8"
 description italian "Modalit  in terza persona con Deathmatch a squadre, Dominio, Cattura la bandiera e Demolizione.\n\n__________\nGiocatori: 6-8"
 description german "Team-Deathmatch, Herrschaft, Capture the Flag und Sprengkommando in der externen Ansicht.\n\n__________\nSpieler: 6-8"
