@@ -249,7 +249,7 @@
 			textalign 6
 			textalignx -60
 			textscale 0.375
-			text "START MATCH"
+			text "START GAME"
 			disabled when ( !privatepartyhost( ) )
 			execKey "APAD_UP"
 			{
