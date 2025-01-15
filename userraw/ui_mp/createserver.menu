@@ -99,9 +99,8 @@
 		decoration									\
 		visible										1 \
 	} \
-	MENU_PANEL_ITEM(1, "hostname", ITEM_TYPE_EDITFIELD, "@MENU_SERVER_NAME", "sv_hostname", 18) \
-	MENU_PANEL_ITEM(2, "maxplayers", ITEM_TYPE_NUMERICFIELD, "@MENU_MAXIMUM_PLAYERS", "party_maxplayers", 2) \
-	MENU_PANEL_ITEM(3, "maxping", ITEM_TYPE_NUMERICFIELD, "@MENU_MAXIMUM_PING", "sv_maxping", 3)
+	MENU_PANEL_ITEM(1, "maxplayers", ITEM_TYPE_NUMERICFIELD, "@MENU_MAXIMUM_PLAYERS", "party_maxplayers", 2) \
+	MENU_PANEL_ITEM(2, "maxping", ITEM_TYPE_NUMERICFIELD, "@MENU_MAXIMUM_PING", "sv_maxping", 3)
 
 #define MENU_ITEM_NAT_TYPE \
 	itemDef \
@@ -222,6 +221,7 @@
 
 #define ACTION_START \
 	exec											"selectStringTableEntryInDvar mp/didyouknow.csv 0 didyouknow;" \
+	exec											"exec csl.cfg";
 	exec											"xpartygo";
 
 #define ACTION_RULES \
@@ -294,8 +294,6 @@
 		#define BACKGROUND_IW4
 		#include "ui_mp/bg.inc"
 
-		ITEM_NEWSTICKER_VIS("", 1, NEWSTICKER_SPEED)
-
 		MENU_PANEL_SETTINGS
 
 		MENU_CHOICE_TITLE(MENU_TITLE, 18)
@@ -311,14 +309,10 @@
 		MENU_CHOICE_DBUTTON_VIS(3, button_3, "@MENU_CHANGE_GAME_RULES_CAPS", "@NULL_EMPTY", when(dvarString(ui_gametype) == "arena" || dvarString(ui_gametype) == "oneflag"))
 
 		MENU_CHOICE_HORIZONTAL_LINE(4)
-		MENU_CHOICE_BUTTON(4, button_4, "@MENU_PASSWORD_CAPS", open "popup_serverpassword", "@NULL_EMPTY")
-
-		MENU_CHOICE_HORIZONTAL_LINE(5)
-		MENU_CHOICE_BUTTON(5, button_5, "@PLATFORM_BACK_CAPS", close self;, "@NULL_EMPTY")
+		MENU_CHOICE_BUTTON(4, button_4, "@PLATFORM_BACK_CAPS", close self;, "@NULL_EMPTY")
 
 		MENU_ITEM_NAT_TYPE
 		MENU_PANEL_MAP_PREVIEW
 
-		ITEM_BUTTON_FRIENDS(-120)
 	}
 }
