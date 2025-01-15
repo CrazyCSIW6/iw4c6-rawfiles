@@ -44,7 +44,7 @@ WIN_COLORDEPTH_WARN_TITLE
 WIN_COMPUTER_CHANGE_BODY
 "If you're seeing this message, you are likely running IW4C6 for the first time.
 Do you want to use MW2's suggested video settings for your hardware?
-This is not recommended for most people. Click 'No' to use the IW4C6 defaults instead."
+This is recommended for most people. Click 'No' to use the IW4C6 defaults instead."
 
 
 
